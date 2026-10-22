@@ -1,1 +1,1526 @@
-{"content": {"schemaVersion": 1, "revision": 1, "updatedAt": "2026-10-22T10:00:00.000Z", "notices": [{"id": "pilot-review", "text": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "active": true, "review": "pending"}], "services": [{"id": "extension", "title": {"ko": "체류기간 연장", "en": "Extend my stay", "zh": "延长居留期限", "id": "Perpanjangan izin tinggal", "hi": "प्रवास अवधि बढ़ाना", "vi": "Gia hạn lưu trú"}, "description": {"ko": "체류기간을 연장하려고 왔어요.", "en": "I need to extend my period of stay.", "zh": "我来申请延长居留期限。", "id": "Saya ingin memperpanjang masa tinggal.", "hi": "मुझे प्रवास अवधि बढ़ानी है।", "vi": "Tôi muốn gia hạn thời gian lưu trú."}, "review": "pending", "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "stepIds": ["confirm", "form", "copy", "stamp", "card", "wait"]}, {"id": "change", "title": {"ko": "체류자격 변경", "en": "Change my status", "zh": "变更居留资格", "id": "Perubahan status tinggal", "hi": "प्रवास दर्जा बदलना", "vi": "Đổi tư cách lưu trú"}, "description": {"ko": "다른 체류자격으로 변경하려고 왔어요.", "en": "I need to change my status of stay.", "zh": "我来申请变更居留资格。", "id": "Saya ingin mengubah status tinggal.", "hi": "मुझे प्रवास दर्जा बदलना है।", "vi": "Tôi muốn đổi tư cách lưu trú."}, "review": "pending", "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "stepIds": ["confirm", "form", "copy", "stamp", "card", "wait"]}, {"id": "registration", "title": {"ko": "최초 외국인등록", "en": "First residence registration", "zh": "首次外国人登记", "id": "Pendaftaran pertama", "hi": "पहला विदेशी पंजीकरण", "vi": "Đăng ký người nước ngoài lần đầu"}, "description": {"ko": "한국에서 처음 외국인등록을 하려고 해요.", "en": "This is my first residence registration.", "zh": "这是我第一次办理外国人登记。", "id": "Ini pendaftaran pertama saya.", "hi": "यह मेरा पहला विदेशी पंजीकरण है।", "vi": "Đây là lần đầu tôi đăng ký người nước ngoài."}, "review": "pending", "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "stepIds": ["confirm", "form", "copy", "stamp", "card", "wait"]}, {"id": "reissue", "title": {"ko": "등록증 재발급", "en": "Replace my residence card", "zh": "补发登记证", "id": "Penerbitan ulang kartu", "hi": "निवास कार्ड दोबारा बनवाना", "vi": "Cấp lại thẻ cư trú"}, "description": {"ko": "등록증을 다시 발급받으려고 왔어요.", "en": "I need a replacement residence card.", "zh": "我来申请补发登记证。", "id": "Saya membutuhkan kartu pengganti.", "hi": "मुझे नया निवास कार्ड चाहिए।", "vi": "Tôi cần cấp lại thẻ cư trú."}, "review": "pending", "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "stepIds": ["confirm", "form", "copy", "stamp", "card", "wait"]}, {"id": "address", "title": {"ko": "체류지 변경", "en": "Report an address change", "zh": "变更居住地址", "id": "Perubahan alamat", "hi": "पता बदलने की सूचना", "vi": "Khai báo đổi địa chỉ"}, "description": {"ko": "이사한 주소를 신고하려고 왔어요.", "en": "I need to report my new address.", "zh": "我来申报搬家后的新地址。", "id": "Saya ingin melaporkan alamat baru.", "hi": "मुझे नए पते की सूचना देनी है।", "vi": "Tôi muốn khai báo địa chỉ mới."}, "review": "pending", "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "stepIds": ["confirm", "form", "copy", "stamp", "card", "wait"]}, {"id": "other", "title": {"ko": "기타 민원", "en": "Another service", "zh": "其他业务", "id": "Layanan lainnya", "hi": "अन्य सेवा", "vi": "Dịch vụ khác"}, "description": {"ko": "어떤 민원인지 직원에게 확인할게요.", "en": "I will ask staff which service I need.", "zh": "我需要向工作人员确认业务类型。", "id": "Saya akan bertanya kepada petugas.", "hi": "मुझे कौन सी सेवा चाहिए, कर्मचारी से पूछूँगा।", "vi": "Tôi sẽ hỏi nhân viên về loại dịch vụ."}, "review": "pending", "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "stepIds": ["confirm", "wait"]}], "steps": [{"id": "confirm", "title": {"ko": "직원에게 필요한 절차 확인", "en": "Confirm what you need with staff", "zh": "向工作人员确认所需步骤", "id": "Konfirmasikan langkah dengan petugas", "hi": "कर्मचारी से आवश्यक चरण पूछें", "vi": "Xác nhận các bước với nhân viên"}, "body": {"ko": "직원에게 민원 유형을 보여주고 신청서, 복사본, 수입인지와 등록증 발급비용이 필요한지 확인하세요. 추가 단계가 필요하면 이전 화면에서 선택을 바꾸세요.", "en": "Show your service to staff. Ask whether a form, copies, stamps and a card fee are needed. Go back to change optional steps if needed.", "zh": "向工作人员出示业务类型，确认是否需要申请表、复印件、收入印花和制证费。如需添加步骤，请返回修改。", "id": "Tunjukkan layanan kepada petugas. Pastikan kebutuhan formulir, salinan, meterai dan biaya kartu. Kembali untuk mengubah langkah opsional.", "hi": "कर्मचारी को सेवा दिखाएँ। फ़ॉर्म, प्रतियाँ, स्टाम्प और कार्ड शुल्क की आवश्यकता पूछें। ज़रूरत हो तो वापस जाकर चरण बदलें।", "vi": "Cho nhân viên xem loại dịch vụ. Hỏi về đơn, bản sao, tem lệ phí và phí thẻ. Quay lại để thay đổi bước tùy chọn nếu cần."}, "warning": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "facilityId": "info", "condition": "always", "review": "pending", "fee": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}}, {"id": "form", "title": {"ko": "신청서 작성", "en": "Fill in your application form", "zh": "填写申请表", "id": "Isi formulir permohonan", "hi": "आवेदन फ़ॉर्म भरें", "vi": "Điền đơn đăng ký"}, "body": {"ko": "현장에서 받은 최신 종이 서식에 작성하세요. 아래 작성 도우미에서 항목별 설명을 확인할 수 있어요.", "en": "Use the current paper form provided at the office. Open the form helper below for field guidance.", "zh": "请填写现场提供的最新纸质表格。下方填写助手提供各项说明。", "id": "Gunakan formulir kertas terbaru dari kantor. Buka bantuan di bawah untuk penjelasan setiap kolom.", "hi": "कार्यालय से मिला वर्तमान कागज़ी फ़ॉर्म भरें। नीचे हर खाने की सहायता देखें।", "vi": "Điền mẫu giấy mới nhất tại văn phòng. Xem hướng dẫn từng mục trong phần hỗ trợ bên dưới."}, "warning": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "facilityId": "forms", "condition": "always", "review": "pending", "fee": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}}, {"id": "copy", "title": {"ko": "여권 복사", "en": "Copy your passport", "zh": "复印护照", "id": "Salin paspor", "hi": "पासपोर्ट की प्रति बनाएँ", "vi": "Sao chụp hộ chiếu"}, "body": {"ko": "직원이 요청한 여권 페이지를 복사하세요. 필요한 페이지와 복사 가능 여부는 현장에서 확인하세요.", "en": "Copy only the passport pages requested by staff. Confirm which pages and whether copying is available.", "zh": "请复印工作人员要求的护照页面。所需页面及复印服务请现场确认。", "id": "Salin halaman paspor yang diminta petugas. Konfirmasikan halaman dan ketersediaan layanan.", "hi": "कर्मचारी द्वारा बताए पासपोर्ट पृष्ठों की प्रति बनाएँ। पृष्ठ और सेवा उपलब्धता पूछें।", "vi": "Sao chụp các trang hộ chiếu theo yêu cầu. Xác nhận trang cần sao và nơi cung cấp dịch vụ."}, "warning": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "facilityId": "copy", "condition": "copy", "review": "pending", "fee": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}}, {"id": "stamp", "title": {"ko": "수입인지 구매", "en": "Buy a revenue stamp", "zh": "购买收入印花", "id": "Beli meterai pendapatan", "hi": "राजस्व स्टाम्प खरीदें", "vi": "Mua tem lệ phí"}, "body": {"ko": "구매 전에 직원에게 필요한 금액과 면제 여부를 확인하세요. 확인받은 경우에만 구매하세요.", "en": "Confirm the amount and any exemption before buying. Purchase only after confirmation.", "zh": "购买前请确认金额及是否免缴。确认后再购买。", "id": "Pastikan jumlah dan pembebasan biaya sebelum membeli. Beli hanya setelah dikonfirmasi.", "hi": "खरीदने से पहले राशि और छूट की पुष्टि करें। पुष्टि के बाद ही खरीदें।", "vi": "Xác nhận số tiền và diện miễn phí trước khi mua. Chỉ mua sau khi đã xác nhận."}, "warning": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "facilityId": "stamps", "condition": "stamp", "review": "pending", "fee": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}}, {"id": "card", "title": {"ko": "등록증 발급비용 납부", "en": "Pay the card issuance fee", "zh": "缴纳登记证制证费", "id": "Bayar biaya penerbitan kartu", "hi": "कार्ड जारी करने का शुल्क दें", "vi": "Nộp phí cấp thẻ"}, "body": {"ko": "직원이 안내한 금액과 방법을 확인한 뒤 납부하세요. 거래 후 출력물이 있는지 확인하고 직원의 안내에 따라 보관·제출하세요.", "en": "Confirm the amount and payment method with staff. Check for a printed receipt and retain or submit it as instructed.", "zh": "确认工作人员告知的金额和缴费方式后再缴纳。查看是否打印凭条，并按指引保管或提交。", "id": "Konfirmasikan jumlah dan cara bayar. Periksa bukti cetak, lalu simpan atau serahkan sesuai arahan.", "hi": "राशि और भुगतान तरीका कर्मचारी से पूछें। छपी रसीद जाँचें और निर्देशानुसार रखें या जमा करें।", "vi": "Xác nhận số tiền và cách nộp với nhân viên. Kiểm tra chứng từ in ra rồi giữ hoặc nộp theo hướng dẫn."}, "warning": {"ko": "완료 표시는 본인 확인용입니다. 실제 납부·접수·승인 여부를 확인하지 않습니다.", "en": "Checks are self-reported. This app does not verify payments, submission or approval.", "zh": "勾选仅为个人记录。本应用不核实付款、受理或审批结果。", "id": "Centang adalah laporan Anda sendiri. Aplikasi tidak memverifikasi pembayaran, pengajuan, atau persetujuan.", "hi": "चेक केवल आपकी अपनी पुष्टि है। ऐप भुगतान, आवेदन या स्वीकृति की पुष्टि नहीं करता।", "vi": "Đánh dấu do bạn tự xác nhận. Ứng dụng không xác minh thanh toán, nộp hồ sơ hay phê duyệt."}, "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "facilityId": "atm", "condition": "card", "review": "pending", "fee": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}}, {"id": "wait", "title": {"ko": "접수 안내 확인 후 대기", "en": "Follow staff instructions and wait", "zh": "确认受理指引后等候", "id": "Ikuti arahan dan tunggu", "hi": "निर्देश लेकर प्रतीक्षा करें", "vi": "Xác nhận hướng dẫn rồi chờ"}, "body": {"ko": "준비한 서류를 확인하고 현장 직원의 번호표·대기 안내를 따르세요. 이 앱은 접수번호나 대기 순서를 발급하지 않습니다.", "en": "Check your documents and follow staff instructions for queue tickets and waiting. This app does not issue queue numbers.", "zh": "检查材料，并按现场指引取号和等候。本应用不发放排队号码。", "id": "Periksa dokumen dan ikuti arahan antrean petugas. Aplikasi tidak menerbitkan nomor antrean.", "hi": "दस्तावेज़ जाँचें और कतार के निर्देश मानें। यह ऐप कतार संख्या नहीं देता।", "vi": "Kiểm tra giấy tờ và làm theo hướng dẫn lấy số, chờ gọi. Ứng dụng không cấp số thứ tự."}, "warning": {"ko": "완료 표시는 본인 확인용입니다. 실제 납부·접수·승인 여부를 확인하지 않습니다.", "en": "Checks are self-reported. This app does not verify payments, submission or approval.", "zh": "勾选仅为个人记录。本应用不核实付款、受理或审批结果。", "id": "Centang adalah laporan Anda sendiri. Aplikasi tidak memverifikasi pembayaran, pengajuan, atau persetujuan.", "hi": "चेक केवल आपकी अपनी पुष्टि है। ऐप भुगतान, आवेदन या स्वीकृति की पुष्टि नहीं करता।", "vi": "Đánh dấu do bạn tự xác nhận. Ứng dụng không xác minh thanh toán, nộp hồ sơ hay phê duyệt."}, "preparation": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "facilityId": "counter", "condition": "always", "review": "pending", "fee": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}}], "facilities": [{"id": "info", "name": {"ko": "안내 데스크", "en": "Information desk", "zh": "咨询服务台", "id": "Meja informasi", "hi": "सूचना डेस्क", "vi": "Bàn hướng dẫn"}, "description": {"ko": "안내 데스크", "en": "Information desk", "zh": "咨询服务台", "id": "Meja informasi", "hi": "सूचना डेस्क", "vi": "Bàn hướng dẫn"}, "location": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "locationReview": "pending", "photo": "", "routeImage": "", "routeReview": "pending"}, {"id": "forms", "name": {"ko": "신청서 작성 공간", "en": "Form writing area", "zh": "填写申请表区域", "id": "Area pengisian formulir", "hi": "फ़ॉर्म भरने का स्थान", "vi": "Khu vực điền đơn"}, "description": {"ko": "신청서 작성 공간", "en": "Form writing area", "zh": "填写申请表区域", "id": "Area pengisian formulir", "hi": "फ़ॉर्म भरने का स्थान", "vi": "Khu vực điền đơn"}, "location": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "locationReview": "pending", "photo": "", "routeImage": "", "routeReview": "pending"}, {"id": "copy", "name": {"ko": "여권 복사 시설", "en": "Passport copy service", "zh": "护照复印处", "id": "Layanan salin paspor", "hi": "पासपोर्ट प्रति सेवा", "vi": "Nơi sao chụp hộ chiếu"}, "description": {"ko": "여권 복사 시설", "en": "Passport copy service", "zh": "护照复印处", "id": "Layanan salin paspor", "hi": "पासपोर्ट प्रति सेवा", "vi": "Nơi sao chụp hộ chiếu"}, "location": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "locationReview": "pending", "photo": "", "routeImage": "", "routeReview": "pending"}, {"id": "stamps", "name": {"ko": "수입인지 판매소", "en": "Revenue stamp counter", "zh": "收入印花销售处", "id": "Loket meterai pendapatan", "hi": "राजस्व स्टाम्प काउंटर", "vi": "Quầy bán tem lệ phí"}, "description": {"ko": "수입인지 판매소", "en": "Revenue stamp counter", "zh": "收入印花销售处", "id": "Loket meterai pendapatan", "hi": "राजस्व स्टाम्प काउंटर", "vi": "Quầy bán tem lệ phí"}, "location": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "locationReview": "pending", "photo": "", "routeImage": "", "routeReview": "pending"}, {"id": "atm", "name": {"ko": "등록증 발급비용 납부 ATM", "en": "Card fee payment ATM", "zh": "登记证制证费缴费ATM", "id": "ATM biaya kartu", "hi": "कार्ड शुल्क भुगतान ATM", "vi": "ATM nộp phí cấp thẻ"}, "description": {"ko": "등록증 발급비용 납부 ATM", "en": "Card fee payment ATM", "zh": "登记证制证费缴费ATM", "id": "ATM biaya kartu", "hi": "कार्ड शुल्क भुगतान ATM", "vi": "ATM nộp phí cấp thẻ"}, "location": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "locationReview": "pending", "photo": "", "routeImage": "", "routeReview": "pending"}, {"id": "counter", "name": {"ko": "접수창구·대기 공간", "en": "Application counter / waiting area", "zh": "受理窗口及等候区", "id": "Loket pengajuan / ruang tunggu", "hi": "आवेदन काउंटर / प्रतीक्षा क्षेत्र", "vi": "Quầy tiếp nhận / khu vực chờ"}, "description": {"ko": "접수창구·대기 공간", "en": "Application counter / waiting area", "zh": "受理窗口及等候区", "id": "Loket pengajuan / ruang tunggu", "hi": "आवेदन काउंटर / प्रतीक्षा क्षेत्र", "vi": "Quầy tiếp nhận / khu vực chờ"}, "location": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "locationReview": "pending", "photo": "", "routeImage": "", "routeReview": "pending"}], "floorplan": {"image": "", "review": "pending", "description": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}}, "formFields": [{"id": "application", "title": {"ko": "신청 업무 선택", "en": "Select application", "zh": "选择申请业务", "id": "Pilih jenis permohonan", "hi": "आवेदन का प्रकार चुनें", "vi": "Chọn loại thủ tục"}, "help": {"ko": "방문 목적에 맞는 항목을 표시하세요. 복수 선택이 필요한지는 직원에게 확인하세요.", "en": "Mark the item matching your visit. Ask staff whether more than one selection is needed.", "zh": "勾选符合来访目的的选项。是否需要多选请咨询工作人员。", "id": "Tandai jenis kunjungan Anda. Tanyakan apakah perlu memilih lebih dari satu.", "hi": "यात्रा के उद्देश्य के अनुसार चुनें। एक से अधिक विकल्प के बारे में कर्मचारी से पूछें।", "vi": "Đánh dấu mục phù hợp. Hỏi nhân viên nếu cần chọn nhiều mục."}, "example": {"ko": "체류기간 연장허가", "en": "Extension of stay", "zh": "延长居留期限许可", "id": "Perpanjangan masa tinggal", "hi": "प्रवास अवधि विस्तार", "vi": "Gia hạn lưu trú"}, "mistake": {"ko": "체류기간 연장과 체류자격 변경을 혼동하지 마세요.", "en": "Do not confuse extension with change of status.", "zh": "不要混淆延长居留期限和变更居留资格。", "id": "Jangan tertukar antara perpanjangan dan perubahan status.", "hi": "अवधि बढ़ाना और दर्जा बदलना अलग हैं।", "vi": "Đừng nhầm gia hạn với đổi tư cách."}, "review": "pending"}, {"id": "name", "title": {"ko": "성명", "en": "Full name", "zh": "姓名", "id": "Nama lengkap", "hi": "पूरा नाम", "vi": "Họ và tên"}, "help": {"ko": "여권의 영문 성명을 기준으로 성과 이름을 정확히 옮겨 적으세요.", "en": "Copy your surname and given names exactly from the passport.", "zh": "请按护照准确填写英文姓和名。", "id": "Salin nama keluarga dan nama sesuai paspor.", "hi": "पासपोर्ट से उपनाम और नाम ठीक वैसे ही लिखें।", "vi": "Chép chính xác họ và tên theo hộ chiếu."}, "example": {"ko": "예시용 가상 성명: KIM / MIN SU", "en": "Fictional example: KIM / MIN SU", "zh": "虚构示例：KIM / MIN SU", "id": "Contoh fiktif: KIM / MIN SU", "hi": "काल्पनिक उदाहरण: KIM / MIN SU", "vi": "Ví dụ giả định: KIM / MIN SU"}, "mistake": {"ko": "별명이나 여권과 다른 철자를 쓰지 마세요.", "en": "Avoid nicknames or spelling different from your passport.", "zh": "不要填写昵称或与护照不同的拼写。", "id": "Jangan gunakan nama panggilan atau ejaan berbeda.", "hi": "उपनाम या अलग वर्तनी न लिखें।", "vi": "Không dùng biệt danh hay cách viết khác hộ chiếu."}, "review": "pending"}, {"id": "birth", "title": {"ko": "생년월일", "en": "Date of birth", "zh": "出生日期", "id": "Tanggal lahir", "hi": "जन्म तिथि", "vi": "Ngày sinh"}, "help": {"ko": "서식에 표시된 연·월·일 순서를 확인하고 여권과 일치하게 작성하세요.", "en": "Check the year/month/day order on the form and match your passport.", "zh": "确认表格的年、月、日顺序，并与护照一致。", "id": "Periksa urutan tahun/bulan/tanggal dan samakan dengan paspor.", "hi": "फ़ॉर्म का वर्ष/माह/दिन क्रम देखें और पासपोर्ट से मिलाएँ।", "vi": "Kiểm tra thứ tự năm/tháng/ngày và ghi đúng hộ chiếu."}, "example": {"ko": "예시용 가상 날짜: 2000 / 01 / 02", "en": "Fictional date: 2000 / 01 / 02", "zh": "虚构日期：2000 / 01 / 02", "id": "Tanggal fiktif: 2000 / 01 / 02", "hi": "काल्पनिक तिथि: 2000 / 01 / 02", "vi": "Ngày giả định: 2000 / 01 / 02"}, "mistake": {"ko": "월과 일을 바꿔 적지 마세요.", "en": "Do not swap the month and day.", "zh": "不要把月份和日期写反。", "id": "Jangan tertukar bulan dan tanggal.", "hi": "माह और दिन न बदलें।", "vi": "Đừng đảo tháng và ngày."}, "review": "pending"}, {"id": "passport", "title": {"ko": "여권 정보", "en": "Passport details", "zh": "护照信息", "id": "Informasi paspor", "hi": "पासपोर्ट विवरण", "vi": "Thông tin hộ chiếu"}, "help": {"ko": "여권번호·발급일·만료일은 여권 원본을 보면서 종이 서식에 작성하세요.", "en": "Copy number, issue date and expiry from your passport onto the paper form.", "zh": "请对照护照原件，在纸质表格填写号码、签发日期和有效期。", "id": "Salin nomor, tanggal terbit dan kedaluwarsa ke formulir kertas.", "hi": "मूल पासपोर्ट देखकर संख्या, जारी और समाप्ति तिथि कागज़ पर लिखें।", "vi": "Đối chiếu hộ chiếu gốc để điền số, ngày cấp và ngày hết hạn vào đơn giấy."}, "example": {"ko": "예시 값 대신 본인 여권 원본을 확인하세요.", "en": "Use your original passport, not an example value.", "zh": "请查看本人护照原件，不要抄示例值。", "id": "Gunakan paspor asli, bukan nilai contoh.", "hi": "उदाहरण की जगह अपना मूल पासपोर्ट देखें।", "vi": "Dùng hộ chiếu gốc, không chép giá trị mẫu."}, "mistake": {"ko": "숫자 0과 알파벳 O를 혼동하지 마세요.", "en": "Check digit 0 versus letter O.", "zh": "注意数字0和字母O的区别。", "id": "Bedakan angka 0 dan huruf O.", "hi": "अंक 0 और अक्षर O में अंतर देखें।", "vi": "Phân biệt số 0 và chữ O."}, "review": "pending"}, {"id": "address", "title": {"ko": "국내 주소", "en": "Address in Korea", "zh": "韩国住址", "id": "Alamat di Korea", "hi": "कोरिया का पता", "vi": "Địa chỉ tại Hàn Quốc"}, "help": {"ko": "실제 거주 주소를 서식에 적고 동·호수 등 상세 주소를 확인하세요. 증빙서류는 직원에게 확인하세요.", "en": "Write your actual Korean address including unit details. Ask staff which proof is required.", "zh": "填写实际韩国住址及楼栋、房号。住所证明材料请咨询工作人员。", "id": "Tulis alamat sebenarnya termasuk nomor unit. Tanyakan bukti yang diperlukan.", "hi": "वास्तविक कोरियाई पता और यूनिट लिखें। आवश्यक प्रमाण कर्मचारी से पूछें।", "vi": "Ghi địa chỉ thực tế, cả tòa nhà và số phòng. Hỏi nhân viên về giấy tờ chứng minh."}, "example": {"ko": "예시용 가상 주소: ○○로 10, 101호", "en": "Fictional example: 10, XX-ro, Unit 101", "zh": "虚构示例：○○路10号101室", "id": "Contoh fiktif: 10, XX-ro, Unit 101", "hi": "काल्पनिक उदाहरण: 10, XX-ro, Unit 101", "vi": "Ví dụ giả định: 10, XX-ro, phòng 101"}, "mistake": {"ko": "건물명만 적거나 동·호수를 빠뜨리지 마세요.", "en": "Do not omit street or unit details.", "zh": "不要只写楼名或遗漏房号。", "id": "Jangan hilangkan jalan atau nomor unit.", "hi": "सड़क या यूनिट का विवरण न छोड़ें।", "vi": "Đừng chỉ ghi tên tòa nhà hoặc bỏ số phòng."}, "review": "pending"}, {"id": "contact", "title": {"ko": "연락처", "en": "Contact number", "zh": "联系电话", "id": "Nomor kontak", "hi": "संपर्क नंबर", "vi": "Số liên hệ"}, "help": {"ko": "연락 가능한 전화번호를 종이 신청서에 작성하세요. 이 앱에는 입력하지 않아요.", "en": "Write a reachable phone number on the paper form, not in this app.", "zh": "在纸质申请表填写可联系到您的电话，请勿在本应用输入。", "id": "Tulis nomor yang bisa dihubungi di kertas, bukan di aplikasi.", "hi": "संपर्क नंबर कागज़ी फ़ॉर्म पर लिखें, ऐप में नहीं।", "vi": "Ghi số có thể liên lạc vào đơn giấy, không nhập vào ứng dụng."}, "example": {"ko": "본인이 사용하는 연락처", "en": "A number you can be reached at", "zh": "可联系到本人的号码", "id": "Nomor yang dapat dihubungi", "hi": "आपसे संपर्क का नंबर", "vi": "Số có thể liên hệ với bạn"}, "mistake": {"ko": "사용하지 않는 번호나 잘못된 숫자가 없는지 확인하세요.", "en": "Check that the number is current and correct.", "zh": "确认号码仍在使用且无误。", "id": "Pastikan nomor aktif dan benar.", "hi": "नंबर चालू और सही होना चाहिए।", "vi": "Kiểm tra số còn dùng và chính xác."}, "review": "pending"}, {"id": "signature", "title": {"ko": "신청일과 서명", "en": "Date and signature", "zh": "申请日期和签名", "id": "Tanggal dan tanda tangan", "hi": "तिथि और हस्ताक्षर", "vi": "Ngày và chữ ký"}, "help": {"ko": "해당 서식의 신청일과 서명란을 확인하세요. 대리 신청은 직원의 안내를 받으세요.", "en": "Check the date and signature fields. Ask staff about applications by a representative.", "zh": "确认申请日期和签名栏。代理申请请咨询工作人员。", "id": "Periksa tanggal dan tanda tangan. Tanyakan pengajuan oleh perwakilan kepada petugas.", "hi": "तिथि और हस्ताक्षर के खाने देखें। प्रतिनिधि आवेदन के लिए कर्मचारी से पूछें।", "vi": "Kiểm tra ngày và ô ký tên. Hỏi nhân viên nếu nộp thay."}, "example": {"ko": "방문 당일 날짜 / 본인 서명", "en": "Visit date / your signature", "zh": "到访当天日期 / 本人签名", "id": "Tanggal kunjungan / tanda tangan Anda", "hi": "आने की तिथि / आपके हस्ताक्षर", "vi": "Ngày đến / chữ ký của bạn"}, "mistake": {"ko": "서명 누락 여부를 확인하세요.", "en": "Check for a missing signature.", "zh": "请确认没有漏签。", "id": "Pastikan tanda tangan tidak terlewat.", "hi": "हस्ताक्षर करना न भूलें।", "vi": "Kiểm tra không bỏ sót chữ ký."}, "review": "pending"}], "ui": {"office": {"ko": "제주출입국·외국인청 방문 안내", "en": "Jeju Immigration Office visit guide", "zh": "济州出入境·外国人厅办事指南", "id": "Panduan kunjungan Imigrasi Jeju", "hi": "जेजू आव्रजन कार्यालय मार्गदर्शिका", "vi": "Hướng dẫn đến Cơ quan Xuất nhập cảnh Jeju"}, "pilot": {"ko": "비공식 시범 서비스", "en": "Unofficial pilot service", "zh": "非官方试运行服务", "id": "Layanan uji coba tidak resmi", "hi": "अनौपचारिक परीक्षण सेवा", "vi": "Dịch vụ thử nghiệm không chính thức"}, "pilotBody": {"ko": "공식기관 승인을 받지 않은 테스트 안내입니다. 확정되지 않은 내용은 직원에게 확인하세요.", "en": "This test guide is not approved by the office. Confirm unverified information with staff.", "zh": "本测试指南未经官方批准。未经确认的信息请咨询工作人员。", "id": "Panduan uji coba ini belum disetujui kantor. Konfirmasikan informasi kepada petugas.", "hi": "यह परीक्षण मार्गदर्शिका कार्यालय से अनुमोदित नहीं है। अपुष्ट जानकारी कर्मचारी से पूछें।", "vi": "Hướng dẫn thử nghiệm chưa được cơ quan phê duyệt. Hãy xác nhận thông tin với nhân viên."}, "heading": {"ko": "무엇을 도와드릴까요?", "en": "How can we help you?", "zh": "您需要办理什么业务？", "id": "Ada yang bisa kami bantu?", "hi": "हम आपकी क्या मदद कर सकते हैं?", "vi": "Bạn cần hỗ trợ việc gì?"}, "intro": {"ko": "민원을 선택하면 필요한 준비를 한 단계씩 안내해 드려요.", "en": "Choose your service. We will guide you one step at a time.", "zh": "选择业务后，我们将逐步引导您准备。", "id": "Pilih layanan. Kami akan memandu Anda langkah demi langkah.", "hi": "अपनी सेवा चुनें। हम हर चरण में मार्गदर्शन करेंगे।", "vi": "Chọn dịch vụ. Chúng tôi sẽ hướng dẫn từng bước."}, "language": {"ko": "언어 선택", "en": "Choose language", "zh": "选择语言", "id": "Pilih bahasa", "hi": "भाषा चुनें", "vi": "Chọn ngôn ngữ"}, "help": {"ko": "직원에게 도움 요청", "en": "Ask staff for help", "zh": "向工作人员求助", "id": "Minta bantuan petugas", "hi": "कर्मचारी से मदद माँगें", "vi": "Nhờ nhân viên hỗ trợ"}, "helpTitle": {"ko": "이 화면을 직원에게 보여주세요", "en": "Show this screen to staff", "zh": "请向工作人员出示此屏幕", "id": "Tunjukkan layar ini kepada petugas", "hi": "यह स्क्रीन कर्मचारी को दिखाएँ", "vi": "Cho nhân viên xem màn hình này"}, "helpBody": {"ko": "다음 절차나 위치를 잘 모르겠습니다. 안내를 부탁드립니다.", "en": "I am not sure about the next step or location. Please help me.", "zh": "我不清楚下一步或地点。请帮助我。", "id": "Saya belum memahami langkah berikutnya atau lokasinya. Mohon bantuannya.", "hi": "मुझे अगला चरण या स्थान समझ नहीं आ रहा। कृपया मदद करें।", "vi": "Tôi chưa rõ bước tiếp theo hoặc vị trí. Xin hãy giúp tôi."}, "close": {"ko": "닫기", "en": "Close", "zh": "关闭", "id": "Tutup", "hi": "बंद करें", "vi": "Đóng"}, "back": {"ko": "이전", "en": "Back", "zh": "返回", "id": "Kembali", "hi": "वापस", "vi": "Quay lại"}, "home": {"ko": "처음으로", "en": "Home", "zh": "首页", "id": "Beranda", "hi": "होम", "vi": "Trang đầu"}, "prepare": {"ko": "시작 전에 확인하세요", "en": "Before you begin", "zh": "开始前请确认", "id": "Sebelum memulai", "hi": "शुरू करने से पहले", "vi": "Trước khi bắt đầu"}, "prepareBody": {"ko": "아래 단계는 필요하다고 안내받은 경우에만 추가하세요. 모르면 선택하지 말고 첫 단계에서 직원에게 확인하세요.", "en": "Add optional steps only if staff told you they are needed. If unsure, leave them off and ask at the first step.", "zh": "仅在工作人员告知需要时添加可选步骤。不确定时请勿勾选，先向工作人员确认。", "id": "Tambahkan langkah opsional hanya jika diarahkan petugas. Jika ragu, biarkan kosong dan tanyakan di langkah pertama.", "hi": "वैकल्पिक चरण तभी जोड़ें जब कर्मचारी ने कहा हो। अनिश्चित होने पर न चुनें और पहले चरण में पूछें।", "vi": "Chỉ thêm bước tùy chọn khi nhân viên yêu cầu. Nếu chưa rõ, để trống và hỏi ở bước đầu tiên."}, "copyOption": {"ko": "여권 복사가 필요하다고 안내받았어요", "en": "Staff said I need a passport copy", "zh": "工作人员要求提供护照复印件", "id": "Petugas meminta salinan paspor", "hi": "कर्मचारी ने पासपोर्ट की प्रति माँगी है", "vi": "Nhân viên yêu cầu bản sao hộ chiếu"}, "stampOption": {"ko": "수입인지 구매가 필요하다고 안내받았어요", "en": "Staff said I need a revenue stamp", "zh": "工作人员要求购买收入印花", "id": "Petugas meminta meterai pendapatan", "hi": "कर्मचारी ने राजस्व स्टाम्प खरीदने को कहा है", "vi": "Nhân viên yêu cầu mua tem lệ phí"}, "cardOption": {"ko": "등록증 발급비용 납부가 필요하다고 안내받았어요", "en": "Staff said I need to pay a card issuance fee", "zh": "工作人员要求缴纳登记证制证费", "id": "Petugas meminta pembayaran biaya kartu", "hi": "कर्मचारी ने कार्ड जारी करने का शुल्क देने को कहा है", "vi": "Nhân viên yêu cầu nộp phí cấp thẻ"}, "start": {"ko": "안내 시작하기", "en": "Start my guide", "zh": "开始引导", "id": "Mulai panduan", "hi": "मार्गदर्शिका शुरू करें", "vi": "Bắt đầu hướng dẫn"}, "route": {"ko": "나의 안내 순서", "en": "My steps", "zh": "我的办理步骤", "id": "Langkah saya", "hi": "मेरे चरण", "vi": "Các bước của tôi"}, "pending": {"ko": "검수 대기", "en": "Pending review", "zh": "待审核", "id": "Menunggu peninjauan", "hi": "समीक्षा लंबित", "vi": "Chờ duyệt"}, "reviewed": {"ko": "검수 완료", "en": "Reviewed", "zh": "已审核", "id": "Sudah ditinjau", "hi": "समीक्षित", "vi": "Đã duyệt"}, "location": {"ko": "어디로 가나요?", "en": "Where do I go?", "zh": "去哪里？", "id": "Ke mana saya pergi?", "hi": "मुझे कहाँ जाना है?", "vi": "Tôi cần đến đâu?"}, "locationPending": {"ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.", "en": "The actual location has not been verified. Ask the information desk.", "zh": "实际位置尚未确认。请询问服务台工作人员。", "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.", "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।", "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."}, "bring": {"ko": "준비물과 확인 사항", "en": "Bring and check", "zh": "材料与确认事项", "id": "Persiapan dan pemeriksaan", "hi": "तैयारी और जाँच", "vi": "Giấy tờ và nội dung cần kiểm tra"}, "warning": {"ko": "꼭 확인하세요", "en": "Please check", "zh": "请务必确认", "id": "Harap periksa", "hi": "कृपया जाँचें", "vi": "Hãy kiểm tra"}, "fee": {"ko": "수수료 안내", "en": "Fee guidance", "zh": "费用说明", "id": "Panduan biaya", "hi": "शुल्क की जानकारी", "vi": "Hướng dẫn lệ phí"}, "complete": {"ko": "이 단계를 마쳤어요", "en": "I completed this step", "zh": "我已完成此步骤", "id": "Langkah ini selesai", "hi": "मैंने यह चरण पूरा किया", "vi": "Tôi đã hoàn thành bước này"}, "undo": {"ko": "완료 표시 취소", "en": "Undo completion", "zh": "取消完成标记", "id": "Batalkan selesai", "hi": "पूर्णता चिह्न हटाएँ", "vi": "Bỏ đánh dấu hoàn thành"}, "next": {"ko": "다음 단계", "en": "Next step", "zh": "下一步", "id": "Langkah berikutnya", "hi": "अगला चरण", "vi": "Bước tiếp theo"}, "checklist": {"ko": "완료 체크리스트", "en": "Completion checklist", "zh": "完成清单", "id": "Daftar penyelesaian", "hi": "पूर्णता सूची", "vi": "Danh sách hoàn thành"}, "selfreport": {"ko": "완료 표시는 본인 확인용입니다. 실제 납부·접수·승인 여부를 확인하지 않습니다.", "en": "Checks are self-reported. This app does not verify payments, submission or approval.", "zh": "勾选仅为个人记录。本应用不核实付款、受理或审批结果。", "id": "Centang adalah laporan Anda sendiri. Aplikasi tidak memverifikasi pembayaran, pengajuan, atau persetujuan.", "hi": "चेक केवल आपकी अपनी पुष्टि है। ऐप भुगतान, आवेदन या स्वीकृति की पुष्टि नहीं करता।", "vi": "Đánh dấu do bạn tự xác nhận. Ứng dụng không xác minh thanh toán, nộp hồ sơ hay phê duyệt."}, "finish": {"ko": "내 준비 확인하기", "en": "Review my preparation", "zh": "查看我的准备情况", "id": "Tinjau persiapan saya", "hi": "मेरी तैयारी देखें", "vi": "Xem lại việc chuẩn bị"}, "doneTitle": {"ko": "안내를 모두 확인했어요", "en": "You have reviewed the guide", "zh": "您已查看全部指南", "id": "Panduan telah ditinjau", "hi": "आपने मार्गदर्शिका देख ली है", "vi": "Bạn đã xem hết hướng dẫn"}, "doneBody": {"ko": "이 화면은 민원 접수증이나 승인 증명이 아닙니다. 남은 절차와 접수 여부는 직원에게 확인하세요.", "en": "This is not a receipt or approval. Ask staff about remaining steps and submission status.", "zh": "此屏幕不是受理回执或批准证明。请向工作人员确认后续步骤和受理情况。", "id": "Layar ini bukan tanda terima atau persetujuan. Konfirmasikan langkah dan status pengajuan kepada petugas.", "hi": "यह रसीद या स्वीकृति नहीं है। शेष चरण और आवेदन की स्थिति कर्मचारी से पूछें।", "vi": "Đây không phải biên nhận hay xác nhận phê duyệt. Hỏi nhân viên về các bước còn lại và tình trạng hồ sơ."}, "resume": {"ko": "이어서 진행하기", "en": "Continue my guide", "zh": "继续办理", "id": "Lanjutkan panduan", "hi": "मार्गदर्शिका जारी रखें", "vi": "Tiếp tục hướng dẫn"}, "reset": {"ko": "진행 기록 지우기", "en": "Clear my progress", "zh": "清除进度", "id": "Hapus progres", "hi": "प्रगति मिटाएँ", "vi": "Xóa tiến trình"}, "restored": {"ko": "이 기기에 저장된 진행 기록을 불러왔어요.", "en": "Your progress on this device has been restored.", "zh": "已恢复此设备上保存的进度。", "id": "Progres di perangkat ini telah dipulihkan.", "hi": "इस उपकरण पर सहेजी गई प्रगति बहाल हो गई है।", "vi": "Đã khôi phục tiến trình trên thiết bị này."}, "privacy": {"ko": "로그인 없이 · 개인정보 입력 없이", "en": "No login · No personal details", "zh": "无需登录 · 无需填写个人信息", "id": "Tanpa login · Tanpa data pribadi", "hi": "लॉगिन नहीं · निजी जानकारी नहीं", "vi": "Không đăng nhập · Không nhập dữ liệu cá nhân"}, "saved": {"ko": "진행 기록은 이 기기에만 24시간 저장돼요.", "en": "Progress stays on this device for up to 24 hours.", "zh": "进度仅在此设备上保存24小时。", "id": "Progres disimpan di perangkat ini hingga 24 jam.", "hi": "प्रगति केवल इस उपकरण पर 24 घंटे तक रहती है।", "vi": "Tiến trình chỉ lưu trên thiết bị này tối đa 24 giờ."}, "storageUnavailable": {"ko": "기기에 기록을 저장할 수 없어 화면을 닫으면 진행 기록이 사라질 수 있어요.", "en": "Device storage is unavailable. Progress may be lost when you close this page.", "zh": "设备存储不可用。关闭页面后进度可能丢失。", "id": "Penyimpanan perangkat tidak tersedia. Progres dapat hilang saat halaman ditutup.", "hi": "उपकरण पर सहेजना उपलब्ध नहीं है। पेज बंद करने पर प्रगति खो सकती है।", "vi": "Không thể lưu trên thiết bị. Tiến trình có thể mất khi đóng trang."}, "formHelper": {"ko": "통합신청서 작성 도우미", "en": "Application form helper", "zh": "综合申请表填写助手", "id": "Bantuan formulir permohonan", "hi": "आवेदन फ़ॉर्म सहायता", "vi": "Hỗ trợ điền đơn tổng hợp"}, "formIntro": {"ko": "종이 신청서를 작성하기 위한 설명입니다. 이 앱에는 개인정보를 입력하지 마세요. 현장 최신 서식과 다른 부분은 직원에게 확인하세요.", "en": "Guidance for your paper form. Do not enter personal data in this app. Ask staff if the current form differs.", "zh": "这是纸质申请表填写说明。请勿在本应用输入个人信息。若与现场最新表格不同，请咨询工作人员。", "id": "Panduan mengisi formulir kertas. Jangan masukkan data pribadi ke aplikasi. Tanyakan jika formulir terbaru berbeda.", "hi": "यह कागज़ी फ़ॉर्म भरने की सहायता है। ऐप में निजी जानकारी न डालें। वर्तमान फ़ॉर्म अलग हो तो कर्मचारी से पूछें।", "vi": "Hướng dẫn điền đơn giấy. Không nhập dữ liệu cá nhân vào ứng dụng. Hỏi nhân viên nếu mẫu hiện tại khác."}, "example": {"ko": "작성 예시", "en": "Example", "zh": "示例", "id": "Contoh", "hi": "उदाहरण", "vi": "Ví dụ"}, "mistake": {"ko": "자주 하는 실수", "en": "Common mistake", "zh": "常见错误", "id": "Kesalahan umum", "hi": "सामान्य गलती", "vi": "Lỗi thường gặp"}, "officialForm": {"ko": "공식 서식 안내 보기", "en": "Official form information", "zh": "查看官方表格说明", "id": "Informasi formulir resmi", "hi": "आधिकारिक फ़ॉर्म जानकारी", "vi": "Xem thông tin mẫu đơn chính thức"}, "facilities": {"ko": "시설 안내", "en": "Facilities", "zh": "设施指南", "id": "Fasilitas", "hi": "सुविधाएँ", "vi": "Hướng dẫn cơ sở"}, "facilityIntro": {"ko": "시설의 위치와 사진은 현장 확인 후 추가됩니다. 실내 위치 추적은 사용하지 않아요.", "en": "Locations and photos will be added after on-site verification. No indoor tracking is used.", "zh": "位置和照片将在现场确认后添加。本应用不使用室内定位。", "id": "Lokasi dan foto ditambahkan setelah verifikasi di lokasi. Tidak ada pelacakan dalam ruangan.", "hi": "स्थल पर पुष्टि के बाद स्थान और तस्वीरें जोड़ी जाएँगी। अंदर स्थान ट्रैक नहीं किया जाता।", "vi": "Vị trí và ảnh sẽ được thêm sau khi kiểm tra tại chỗ. Không sử dụng định vị trong nhà."}, "floorplan": {"ko": "청사 평면도", "en": "Office floor plan", "zh": "办公楼平面图", "id": "Denah kantor", "hi": "कार्यालय का नक्शा", "vi": "Sơ đồ văn phòng"}, "floorplanPending": {"ko": "검증된 평면도가 아직 등록되지 않았어요.", "en": "No verified floor plan has been added yet.", "zh": "尚未添加经核实的平面图。", "id": "Denah terverifikasi belum tersedia.", "hi": "सत्यापित नक्शा अभी उपलब्ध नहीं है।", "vi": "Chưa có sơ đồ đã được xác minh."}, "photo": {"ko": "시설 사진", "en": "Facility photo", "zh": "设施照片", "id": "Foto fasilitas", "hi": "सुविधा की तस्वीर", "vi": "Ảnh cơ sở"}, "routeImage": {"ko": "확인된 이동 경로", "en": "Verified route", "zh": "已确认路线", "id": "Rute terverifikasi", "hi": "सत्यापित मार्ग", "vi": "Lộ trình đã xác minh"}, "qr": {"ko": "시설 QR코드", "en": "Facility QR code", "zh": "设施二维码", "id": "Kode QR fasilitas", "hi": "सुविधा QR कोड", "vi": "Mã QR cơ sở"}, "downloadQr": {"ko": "QR 다운로드 (SVG)", "en": "Download QR (SVG)", "zh": "下载二维码 (SVG)", "id": "Unduh QR (SVG)", "hi": "QR डाउनलोड करें (SVG)", "vi": "Tải QR (SVG)"}, "notices": {"ko": "알려드려요", "en": "Notices", "zh": "通知", "id": "Pengumuman", "hi": "सूचनाएँ", "vi": "Thông báo"}, "sources": {"ko": "공식 참고 자료", "en": "Official references", "zh": "官方参考资料", "id": "Referensi resmi", "hi": "आधिकारिक संदर्भ", "vi": "Tài liệu tham khảo chính thức"}, "checked": {"ko": "자료 확인일", "en": "Source checked", "zh": "资料查阅日期", "id": "Tanggal pemeriksaan sumber", "hi": "स्रोत जाँच की तारीख", "vi": "Ngày kiểm tra nguồn"}, "offline": {"ko": "오프라인 상태입니다. 저장된 안내는 오래되었을 수 있으니 직원에게 확인하세요.", "en": "You are offline. Saved guidance may be outdated; confirm with staff.", "zh": "您处于离线状态。已保存的指南可能过时，请咨询工作人员。", "id": "Anda sedang offline. Panduan tersimpan mungkin usang; tanyakan kepada petugas.", "hi": "आप ऑफ़लाइन हैं। सहेजी जानकारी पुरानी हो सकती है; कर्मचारी से पुष्टि करें।", "vi": "Bạn đang ngoại tuyến. Hướng dẫn đã lưu có thể cũ; hãy xác nhận với nhân viên."}, "contentError": {"ko": "안내 정보를 갱신하지 못했어요. 기본 시범 안내를 표시합니다. 직원에게 확인하세요.", "en": "Could not refresh guidance. Showing the pilot baseline. Please ask staff.", "zh": "无法更新指南。当前显示试运行基础内容，请咨询工作人员。", "id": "Panduan gagal diperbarui. Menampilkan panduan uji coba dasar. Tanyakan kepada petugas.", "hi": "जानकारी अपडेट नहीं हुई। मूल परीक्षण मार्गदर्शिका दिखाई जा रही है। कर्मचारी से पूछें।", "vi": "Không cập nhật được hướng dẫn. Đang hiển thị bản thử nghiệm gốc. Hãy hỏi nhân viên."}, "update": {"ko": "안내가 변경되어 기존 진행 기록을 초기화했어요.", "en": "Guidance changed, so previous progress was cleared.", "zh": "指南已更新，之前的进度已清除。", "id": "Panduan berubah; progres sebelumnya dihapus.", "hi": "मार्गदर्शिका बदल गई है; पिछली प्रगति मिटा दी गई।", "vi": "Hướng dẫn đã thay đổi nên tiến trình cũ đã được xóa."}, "install": {"ko": "홈 화면에 추가해 사용할 수 있어요. iPhone: 공유 → 홈 화면에 추가. Android: 브라우저 메뉴 → 앱 설치.", "en": "Install from your browser. iPhone: Share → Add to Home Screen. Android: menu → Install app.", "zh": "可添加到主屏幕。iPhone：分享 → 添加到主屏幕。Android：浏览器菜单 → 安装应用。", "id": "Pasang melalui browser. iPhone: Bagikan → Tambah ke Layar Utama. Android: menu → Instal aplikasi.", "hi": "ब्राउज़र से इंस्टॉल करें। iPhone: साझा करें → होम स्क्रीन पर जोड़ें। Android: मेनू → ऐप इंस्टॉल करें।", "vi": "Cài qua trình duyệt. iPhone: Chia sẻ → Thêm vào MH chính. Android: menu → Cài đặt ứng dụng."}, "completedCount": {"ko": "완료", "en": "completed", "zh": "已完成", "id": "selesai", "hi": "पूर्ण", "vi": "hoàn thành"}, "noService": {"ko": "민원을 먼저 선택하세요.", "en": "Choose a service first.", "zh": "请先选择业务。", "id": "Pilih layanan terlebih dahulu.", "hi": "पहले सेवा चुनें।", "vi": "Hãy chọn dịch vụ trước."}, "returnGuide": {"ko": "진행 중인 안내로 돌아가기", "en": "Return to my guide", "zh": "返回当前指南", "id": "Kembali ke panduan saya", "hi": "मेरी मार्गदर्शिका पर लौटें", "vi": "Quay lại hướng dẫn của tôi"}, "confirmNeeded": {"ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.", "en": "Pending review: confirm required documents and amounts with staff.", "zh": "待审核：请向工作人员确认所需材料和金额。", "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.", "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।", "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."}, "newVisit": {"ko": "다른 민원 시작하기", "en": "Start another service", "zh": "开始其他业务", "id": "Mulai layanan lain", "hi": "दूसरी सेवा शुरू करें", "vi": "Bắt đầu dịch vụ khác"}, "noPayment": {"ko": "앱에서는 결제하거나 신청서를 제출할 수 없어요.", "en": "You cannot pay or submit an application through this app.", "zh": "本应用不支持付款或提交申请。", "id": "Aplikasi ini tidak menerima pembayaran atau pengajuan.", "hi": "इस ऐप से भुगतान या आवेदन जमा नहीं किया जा सकता।", "vi": "Không thể thanh toán hay nộp đơn qua ứng dụng."}}, "sources": [{"id": "moj-form", "title": "법무부: 통합신청서(신고서) 안내", "url": "https://www.moj.go.kr/bbs/moj/93/561864/artclView.do", "checkedAt": "2026-10-22T10:00:00.000Z", "scope": "Official form purpose and availability only. Notice dated 2022-08-04. Current local form, field guidance, translations, fees and workflow require staff review."}, {"id": "hikorea", "title": "Hi Korea: 민원서식", "url": "https://www.hikorea.go.kr/board/BoardApplicationListR.pt", "checkedAt": "2026-10-22T10:00:00.000Z", "scope": "Official current form discovery page. No claim that the downloaded current revision was verified."}]}, "audit": []}
+{
+  "content": {
+    "schemaVersion": 1,
+    "revision": 2,
+    "updatedAt": "2026-10-22T04:20:52.396Z",
+    "notices": [
+      {
+        "id": "pilot-review",
+        "text": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "active": true,
+        "review": "pending"
+      }
+    ],
+    "services": [
+      {
+        "id": "extension",
+        "title": {
+          "ko": "체류기간 연장",
+          "en": "Extend my stay",
+          "zh": "延长居留期限",
+          "id": "Perpanjangan izin tinggal",
+          "hi": "प्रवास अवधि बढ़ाना",
+          "vi": "Gia hạn lưu trú"
+        },
+        "description": {
+          "ko": "체류기간을 연장하려고 왔어요.",
+          "en": "I need to extend my period of stay.",
+          "zh": "我来申请延长居留期限。",
+          "id": "Saya ingin memperpanjang masa tinggal.",
+          "hi": "मुझे प्रवास अवधि बढ़ानी है।",
+          "vi": "Tôi muốn gia hạn thời gian lưu trú."
+        },
+        "review": "pending",
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "stepIds": [
+          "form",
+          "copy",
+          "stamp",
+          "card",
+          "wait"
+        ]
+      },
+      {
+        "id": "change",
+        "title": {
+          "ko": "체류자격 변경",
+          "en": "Change my status",
+          "zh": "变更居留资格",
+          "id": "Perubahan status tinggal",
+          "hi": "प्रवास दर्जा बदलना",
+          "vi": "Đổi tư cách lưu trú"
+        },
+        "description": {
+          "ko": "다른 체류자격으로 변경하려고 왔어요.",
+          "en": "I need to change my status of stay.",
+          "zh": "我来申请变更居留资格。",
+          "id": "Saya ingin mengubah status tinggal.",
+          "hi": "मुझे प्रवास दर्जा बदलना है।",
+          "vi": "Tôi muốn đổi tư cách lưu trú."
+        },
+        "review": "pending",
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "stepIds": [
+          "form",
+          "copy",
+          "stamp",
+          "card",
+          "wait"
+        ]
+      },
+      {
+        "id": "registration",
+        "title": {
+          "ko": "최초 외국인등록",
+          "en": "First residence registration",
+          "zh": "首次外国人登记",
+          "id": "Pendaftaran pertama",
+          "hi": "पहला विदेशी पंजीकरण",
+          "vi": "Đăng ký người nước ngoài lần đầu"
+        },
+        "description": {
+          "ko": "한국에서 처음 외국인등록을 하려고 해요.",
+          "en": "This is my first residence registration.",
+          "zh": "这是我第一次办理外国人登记。",
+          "id": "Ini pendaftaran pertama saya.",
+          "hi": "यह मेरा पहला विदेशी पंजीकरण है।",
+          "vi": "Đây là lần đầu tôi đăng ký người nước ngoài."
+        },
+        "review": "pending",
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "stepIds": [
+          "form",
+          "copy",
+          "stamp",
+          "card",
+          "wait"
+        ]
+      },
+      {
+        "id": "reissue",
+        "title": {
+          "ko": "등록증 재발급",
+          "en": "Replace my residence card",
+          "zh": "补发登记证",
+          "id": "Penerbitan ulang kartu",
+          "hi": "निवास कार्ड दोबारा बनवाना",
+          "vi": "Cấp lại thẻ cư trú"
+        },
+        "description": {
+          "ko": "등록증을 다시 발급받으려고 왔어요.",
+          "en": "I need a replacement residence card.",
+          "zh": "我来申请补发登记证。",
+          "id": "Saya membutuhkan kartu pengganti.",
+          "hi": "मुझे नया निवास कार्ड चाहिए।",
+          "vi": "Tôi cần cấp lại thẻ cư trú."
+        },
+        "review": "pending",
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "stepIds": [
+          "form",
+          "copy",
+          "stamp",
+          "card",
+          "wait"
+        ]
+      },
+      {
+        "id": "address",
+        "title": {
+          "ko": "체류지 변경",
+          "en": "Report an address change",
+          "zh": "变更居住地址",
+          "id": "Perubahan alamat",
+          "hi": "पता बदलने की सूचना",
+          "vi": "Khai báo đổi địa chỉ"
+        },
+        "description": {
+          "ko": "이사한 주소를 신고하려고 왔어요.",
+          "en": "I need to report my new address.",
+          "zh": "我来申报搬家后的新地址。",
+          "id": "Saya ingin melaporkan alamat baru.",
+          "hi": "मुझे नए पते की सूचना देनी है।",
+          "vi": "Tôi muốn khai báo địa chỉ mới."
+        },
+        "review": "pending",
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "stepIds": [
+          "form",
+          "copy",
+          "stamp",
+          "card",
+          "wait"
+        ]
+      },
+      {
+        "id": "other",
+        "title": {
+          "ko": "기타 민원",
+          "en": "Another service",
+          "zh": "其他业务",
+          "id": "Layanan lainnya",
+          "hi": "अन्य सेवा",
+          "vi": "Dịch vụ khác"
+        },
+        "description": {
+          "ko": "어떤 민원인지 직원에게 확인할게요.",
+          "en": "I will ask staff which service I need.",
+          "zh": "我需要向工作人员确认业务类型。",
+          "id": "Saya akan bertanya kepada petugas.",
+          "hi": "मुझे कौन सी सेवा चाहिए, कर्मचारी से पूछूँगा।",
+          "vi": "Tôi sẽ hỏi nhân viên về loại dịch vụ."
+        },
+        "review": "pending",
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "stepIds": [
+          "inquiry"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": "inquiry",
+        "title": {
+          "ko": "민원 유형 문의",
+          "en": "Ask about your service",
+          "zh": "咨询办理业务类型",
+          "id": "Tanyakan jenis layanan Anda",
+          "hi": "अपनी सेवा के बारे में पूछें",
+          "vi": "Hỏi về loại thủ tục của bạn"
+        },
+        "body": {
+          "ko": "원하는 민원 내용을 직원에게 설명하거나 이 화면을 보여주세요. 담당 창구와 필요한 준비물은 직원 안내에 따라 확인하세요.",
+          "en": "Tell staff what you need or show them this screen. Ask which counter to visit and what to bring.",
+          "zh": "请向工作人员说明您要办理的事项，或出示此页面。请确认办理窗口及所需材料。",
+          "id": "Jelaskan keperluan Anda kepada petugas atau tunjukkan layar ini. Tanyakan loket dan dokumen yang diperlukan.",
+          "hi": "कर्मचारी को अपना काम बताएँ या यह स्क्रीन दिखाएँ। सही काउंटर और आवश्यक दस्तावेज़ पूछें।",
+          "vi": "Hãy nói với nhân viên việc bạn cần làm hoặc cho họ xem màn hình này. Hỏi quầy tiếp nhận và giấy tờ cần mang theo."
+        },
+        "warning": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "preparation": {
+          "ko": "어떤 민원을 보러 왔는지 설명할 수 있으면 됩니다. 정확한 서류 목록은 직원에게 확인하세요.",
+          "en": "Be ready to describe your request. Ask staff for the exact document list.",
+          "zh": "请准备说明您的办理事项，并向工作人员确认具体材料清单。",
+          "id": "Siapkan penjelasan tentang keperluan Anda. Pastikan daftar dokumen kepada petugas.",
+          "hi": "अपना काम बताने के लिए तैयार रहें। दस्तावेज़ों की सही सूची कर्मचारी से पूछें।",
+          "vi": "Hãy chuẩn bị mô tả yêu cầu của bạn. Xác nhận danh sách giấy tờ với nhân viên."
+        },
+        "facilityId": "info",
+        "condition": "always",
+        "review": "pending",
+        "fee": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        }
+      },
+      {
+        "id": "form",
+        "title": {
+          "ko": "신청서 작성",
+          "en": "Fill in your application form",
+          "zh": "填写申请表",
+          "id": "Isi formulir permohonan",
+          "hi": "आवेदन फ़ॉर्म भरें",
+          "vi": "Điền đơn đăng ký"
+        },
+        "body": {
+          "ko": "현장에서 받은 최신 종이 서식에 작성하세요. 아래 작성 도우미에서 항목별 설명을 확인할 수 있어요.",
+          "en": "Use the current paper form provided at the office. Open the form helper below for field guidance.",
+          "zh": "请填写现场提供的最新纸质表格。下方填写助手提供各项说明。",
+          "id": "Gunakan formulir kertas terbaru dari kantor. Buka bantuan di bawah untuk penjelasan setiap kolom.",
+          "hi": "कार्यालय से मिला वर्तमान कागज़ी फ़ॉर्म भरें। नीचे हर खाने की सहायता देखें।",
+          "vi": "Điền mẫu giấy mới nhất tại văn phòng. Xem hướng dẫn từng mục trong phần hỗ trợ bên dưới."
+        },
+        "warning": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "facilityId": "forms",
+        "condition": "always",
+        "review": "pending",
+        "fee": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        }
+      },
+      {
+        "id": "copy",
+        "title": {
+          "ko": "여권 복사",
+          "en": "Copy your passport",
+          "zh": "复印护照",
+          "id": "Salin paspor",
+          "hi": "पासपोर्ट की प्रति बनाएँ",
+          "vi": "Sao chụp hộ chiếu"
+        },
+        "body": {
+          "ko": "직원이 요청한 여권 페이지를 복사하세요. 필요한 페이지와 복사 가능 여부는 현장에서 확인하세요.",
+          "en": "Copy only the passport pages requested by staff. Confirm which pages and whether copying is available.",
+          "zh": "请复印工作人员要求的护照页面。所需页面及复印服务请现场确认。",
+          "id": "Salin halaman paspor yang diminta petugas. Konfirmasikan halaman dan ketersediaan layanan.",
+          "hi": "कर्मचारी द्वारा बताए पासपोर्ट पृष्ठों की प्रति बनाएँ। पृष्ठ और सेवा उपलब्धता पूछें।",
+          "vi": "Sao chụp các trang hộ chiếu theo yêu cầu. Xác nhận trang cần sao và nơi cung cấp dịch vụ."
+        },
+        "warning": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "facilityId": "copy",
+        "condition": "copy",
+        "review": "pending",
+        "fee": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        }
+      },
+      {
+        "id": "stamp",
+        "title": {
+          "ko": "수입인지 구매",
+          "en": "Buy a revenue stamp",
+          "zh": "购买收入印花",
+          "id": "Beli meterai pendapatan",
+          "hi": "राजस्व स्टाम्प खरीदें",
+          "vi": "Mua tem lệ phí"
+        },
+        "body": {
+          "ko": "구매 전에 직원에게 필요한 금액과 면제 여부를 확인하세요. 확인받은 경우에만 구매하세요.",
+          "en": "Confirm the amount and any exemption before buying. Purchase only after confirmation.",
+          "zh": "购买前请确认金额及是否免缴。确认后再购买。",
+          "id": "Pastikan jumlah dan pembebasan biaya sebelum membeli. Beli hanya setelah dikonfirmasi.",
+          "hi": "खरीदने से पहले राशि और छूट की पुष्टि करें। पुष्टि के बाद ही खरीदें।",
+          "vi": "Xác nhận số tiền và diện miễn phí trước khi mua. Chỉ mua sau khi đã xác nhận."
+        },
+        "warning": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "facilityId": "stamps",
+        "condition": "stamp",
+        "review": "pending",
+        "fee": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        }
+      },
+      {
+        "id": "card",
+        "title": {
+          "ko": "등록증 발급비용 납부",
+          "en": "Pay the card issuance fee",
+          "zh": "缴纳登记证制证费",
+          "id": "Bayar biaya penerbitan kartu",
+          "hi": "कार्ड जारी करने का शुल्क दें",
+          "vi": "Nộp phí cấp thẻ"
+        },
+        "body": {
+          "ko": "직원이 안내한 금액과 방법을 확인한 뒤 납부하세요. 거래 후 출력물이 있는지 확인하고 직원의 안내에 따라 보관·제출하세요.",
+          "en": "Confirm the amount and payment method with staff. Check for a printed receipt and retain or submit it as instructed.",
+          "zh": "确认工作人员告知的金额和缴费方式后再缴纳。查看是否打印凭条，并按指引保管或提交。",
+          "id": "Konfirmasikan jumlah dan cara bayar. Periksa bukti cetak, lalu simpan atau serahkan sesuai arahan.",
+          "hi": "राशि और भुगतान तरीका कर्मचारी से पूछें। छपी रसीद जाँचें और निर्देशानुसार रखें या जमा करें।",
+          "vi": "Xác nhận số tiền và cách nộp với nhân viên. Kiểm tra chứng từ in ra rồi giữ hoặc nộp theo hướng dẫn."
+        },
+        "warning": {
+          "ko": "완료 표시는 본인 확인용입니다. 실제 납부·접수·승인 여부를 확인하지 않습니다.",
+          "en": "Checks are self-reported. This app does not verify payments, submission or approval.",
+          "zh": "勾选仅为个人记录。本应用不核实付款、受理或审批结果。",
+          "id": "Centang adalah laporan Anda sendiri. Aplikasi tidak memverifikasi pembayaran, pengajuan, atau persetujuan.",
+          "hi": "चेक केवल आपकी अपनी पुष्टि है। ऐप भुगतान, आवेदन या स्वीकृति की पुष्टि नहीं करता।",
+          "vi": "Đánh dấu do bạn tự xác nhận. Ứng dụng không xác minh thanh toán, nộp hồ sơ hay phê duyệt."
+        },
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "facilityId": "atm",
+        "condition": "card",
+        "review": "pending",
+        "fee": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        }
+      },
+      {
+        "id": "wait",
+        "title": {
+          "ko": "접수 안내 확인 후 대기",
+          "en": "Follow staff instructions and wait",
+          "zh": "确认受理指引后等候",
+          "id": "Ikuti arahan dan tunggu",
+          "hi": "निर्देश लेकर प्रतीक्षा करें",
+          "vi": "Xác nhận hướng dẫn rồi chờ"
+        },
+        "body": {
+          "ko": "준비한 서류를 확인하고 현장 직원의 번호표·대기 안내를 따르세요. 이 앱은 접수번호나 대기 순서를 발급하지 않습니다.",
+          "en": "Check your documents and follow staff instructions for queue tickets and waiting. This app does not issue queue numbers.",
+          "zh": "检查材料，并按现场指引取号和等候。本应用不发放排队号码。",
+          "id": "Periksa dokumen dan ikuti arahan antrean petugas. Aplikasi tidak menerbitkan nomor antrean.",
+          "hi": "दस्तावेज़ जाँचें और कतार के निर्देश मानें। यह ऐप कतार संख्या नहीं देता।",
+          "vi": "Kiểm tra giấy tờ và làm theo hướng dẫn lấy số, chờ gọi. Ứng dụng không cấp số thứ tự."
+        },
+        "warning": {
+          "ko": "완료 표시는 본인 확인용입니다. 실제 납부·접수·승인 여부를 확인하지 않습니다.",
+          "en": "Checks are self-reported. This app does not verify payments, submission or approval.",
+          "zh": "勾选仅为个人记录。本应用不核实付款、受理或审批结果。",
+          "id": "Centang adalah laporan Anda sendiri. Aplikasi tidak memverifikasi pembayaran, pengajuan, atau persetujuan.",
+          "hi": "चेक केवल आपकी अपनी पुष्टि है। ऐप भुगतान, आवेदन या स्वीकृति की पुष्टि नहीं करता।",
+          "vi": "Đánh dấu do bạn tự xác nhận. Ứng dụng không xác minh thanh toán, nộp hồ sơ hay phê duyệt."
+        },
+        "preparation": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        },
+        "facilityId": "counter",
+        "condition": "always",
+        "review": "pending",
+        "fee": {
+          "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+          "en": "Pending review: confirm required documents and amounts with staff.",
+          "zh": "待审核：请向工作人员确认所需材料和金额。",
+          "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+          "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+          "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        }
+      }
+    ],
+    "facilities": [
+      {
+        "id": "info",
+        "name": {
+          "ko": "안내 데스크",
+          "en": "Information desk",
+          "zh": "咨询服务台",
+          "id": "Meja informasi",
+          "hi": "सूचना डेस्क",
+          "vi": "Bàn hướng dẫn"
+        },
+        "description": {
+          "ko": "안내 데스크",
+          "en": "Information desk",
+          "zh": "咨询服务台",
+          "id": "Meja informasi",
+          "hi": "सूचना डेस्क",
+          "vi": "Bàn hướng dẫn"
+        },
+        "location": {
+          "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+          "en": "The actual location has not been verified. Ask the information desk.",
+          "zh": "实际位置尚未确认。请询问服务台工作人员。",
+          "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+          "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+          "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+        },
+        "locationReview": "pending",
+        "photo": "",
+        "routeImage": "",
+        "routeReview": "pending"
+      },
+      {
+        "id": "forms",
+        "name": {
+          "ko": "신청서 작성 공간",
+          "en": "Form writing area",
+          "zh": "填写申请表区域",
+          "id": "Area pengisian formulir",
+          "hi": "फ़ॉर्म भरने का स्थान",
+          "vi": "Khu vực điền đơn"
+        },
+        "description": {
+          "ko": "신청서 작성 공간",
+          "en": "Form writing area",
+          "zh": "填写申请表区域",
+          "id": "Area pengisian formulir",
+          "hi": "फ़ॉर्म भरने का स्थान",
+          "vi": "Khu vực điền đơn"
+        },
+        "location": {
+          "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+          "en": "The actual location has not been verified. Ask the information desk.",
+          "zh": "实际位置尚未确认。请询问服务台工作人员。",
+          "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+          "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+          "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+        },
+        "locationReview": "pending",
+        "photo": "",
+        "routeImage": "",
+        "routeReview": "pending"
+      },
+      {
+        "id": "copy",
+        "name": {
+          "ko": "여권 복사 시설",
+          "en": "Passport copy service",
+          "zh": "护照复印处",
+          "id": "Layanan salin paspor",
+          "hi": "पासपोर्ट प्रति सेवा",
+          "vi": "Nơi sao chụp hộ chiếu"
+        },
+        "description": {
+          "ko": "여권 복사 시설",
+          "en": "Passport copy service",
+          "zh": "护照复印处",
+          "id": "Layanan salin paspor",
+          "hi": "पासपोर्ट प्रति सेवा",
+          "vi": "Nơi sao chụp hộ chiếu"
+        },
+        "location": {
+          "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+          "en": "The actual location has not been verified. Ask the information desk.",
+          "zh": "实际位置尚未确认。请询问服务台工作人员。",
+          "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+          "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+          "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+        },
+        "locationReview": "pending",
+        "photo": "",
+        "routeImage": "",
+        "routeReview": "pending"
+      },
+      {
+        "id": "stamps",
+        "name": {
+          "ko": "수입인지 판매소",
+          "en": "Revenue stamp counter",
+          "zh": "收入印花销售处",
+          "id": "Loket meterai pendapatan",
+          "hi": "राजस्व स्टाम्प काउंटर",
+          "vi": "Quầy bán tem lệ phí"
+        },
+        "description": {
+          "ko": "수입인지 판매소",
+          "en": "Revenue stamp counter",
+          "zh": "收入印花销售处",
+          "id": "Loket meterai pendapatan",
+          "hi": "राजस्व स्टाम्प काउंटर",
+          "vi": "Quầy bán tem lệ phí"
+        },
+        "location": {
+          "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+          "en": "The actual location has not been verified. Ask the information desk.",
+          "zh": "实际位置尚未确认。请询问服务台工作人员。",
+          "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+          "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+          "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+        },
+        "locationReview": "pending",
+        "photo": "",
+        "routeImage": "",
+        "routeReview": "pending"
+      },
+      {
+        "id": "atm",
+        "name": {
+          "ko": "등록증 발급비용 납부 ATM",
+          "en": "Card fee payment ATM",
+          "zh": "登记证制证费缴费ATM",
+          "id": "ATM biaya kartu",
+          "hi": "कार्ड शुल्क भुगतान ATM",
+          "vi": "ATM nộp phí cấp thẻ"
+        },
+        "description": {
+          "ko": "등록증 발급비용 납부 ATM",
+          "en": "Card fee payment ATM",
+          "zh": "登记证制证费缴费ATM",
+          "id": "ATM biaya kartu",
+          "hi": "कार्ड शुल्क भुगतान ATM",
+          "vi": "ATM nộp phí cấp thẻ"
+        },
+        "location": {
+          "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+          "en": "The actual location has not been verified. Ask the information desk.",
+          "zh": "实际位置尚未确认。请询问服务台工作人员。",
+          "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+          "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+          "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+        },
+        "locationReview": "pending",
+        "photo": "",
+        "routeImage": "",
+        "routeReview": "pending"
+      },
+      {
+        "id": "counter",
+        "name": {
+          "ko": "접수창구·대기 공간",
+          "en": "Application counter / waiting area",
+          "zh": "受理窗口及等候区",
+          "id": "Loket pengajuan / ruang tunggu",
+          "hi": "आवेदन काउंटर / प्रतीक्षा क्षेत्र",
+          "vi": "Quầy tiếp nhận / khu vực chờ"
+        },
+        "description": {
+          "ko": "접수창구·대기 공간",
+          "en": "Application counter / waiting area",
+          "zh": "受理窗口及等候区",
+          "id": "Loket pengajuan / ruang tunggu",
+          "hi": "आवेदन काउंटर / प्रतीक्षा क्षेत्र",
+          "vi": "Quầy tiếp nhận / khu vực chờ"
+        },
+        "location": {
+          "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+          "en": "The actual location has not been verified. Ask the information desk.",
+          "zh": "实际位置尚未确认。请询问服务台工作人员。",
+          "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+          "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+          "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+        },
+        "locationReview": "pending",
+        "photo": "",
+        "routeImage": "",
+        "routeReview": "pending"
+      }
+    ],
+    "floorplan": {
+      "image": "",
+      "review": "pending",
+      "description": {
+        "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+        "en": "The actual location has not been verified. Ask the information desk.",
+        "zh": "实际位置尚未确认。请询问服务台工作人员。",
+        "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+        "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+        "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+      }
+    },
+    "formFields": [
+      {
+        "id": "application",
+        "title": {
+          "ko": "신청 업무 선택",
+          "en": "Select application",
+          "zh": "选择申请业务",
+          "id": "Pilih jenis permohonan",
+          "hi": "आवेदन का प्रकार चुनें",
+          "vi": "Chọn loại thủ tục"
+        },
+        "help": {
+          "ko": "방문 목적에 맞는 항목을 표시하세요. 복수 선택이 필요한지는 직원에게 확인하세요.",
+          "en": "Mark the item matching your visit. Ask staff whether more than one selection is needed.",
+          "zh": "勾选符合来访目的的选项。是否需要多选请咨询工作人员。",
+          "id": "Tandai jenis kunjungan Anda. Tanyakan apakah perlu memilih lebih dari satu.",
+          "hi": "यात्रा के उद्देश्य के अनुसार चुनें। एक से अधिक विकल्प के बारे में कर्मचारी से पूछें।",
+          "vi": "Đánh dấu mục phù hợp. Hỏi nhân viên nếu cần chọn nhiều mục."
+        },
+        "example": {
+          "ko": "체류기간 연장허가",
+          "en": "Extension of stay",
+          "zh": "延长居留期限许可",
+          "id": "Perpanjangan masa tinggal",
+          "hi": "प्रवास अवधि विस्तार",
+          "vi": "Gia hạn lưu trú"
+        },
+        "mistake": {
+          "ko": "체류기간 연장과 체류자격 변경을 혼동하지 마세요.",
+          "en": "Do not confuse extension with change of status.",
+          "zh": "不要混淆延长居留期限和变更居留资格。",
+          "id": "Jangan tertukar antara perpanjangan dan perubahan status.",
+          "hi": "अवधि बढ़ाना और दर्जा बदलना अलग हैं।",
+          "vi": "Đừng nhầm gia hạn với đổi tư cách."
+        },
+        "review": "pending"
+      },
+      {
+        "id": "name",
+        "title": {
+          "ko": "성명",
+          "en": "Full name",
+          "zh": "姓名",
+          "id": "Nama lengkap",
+          "hi": "पूरा नाम",
+          "vi": "Họ và tên"
+        },
+        "help": {
+          "ko": "여권의 영문 성명을 기준으로 성과 이름을 정확히 옮겨 적으세요.",
+          "en": "Copy your surname and given names exactly from the passport.",
+          "zh": "请按护照准确填写英文姓和名。",
+          "id": "Salin nama keluarga dan nama sesuai paspor.",
+          "hi": "पासपोर्ट से उपनाम और नाम ठीक वैसे ही लिखें।",
+          "vi": "Chép chính xác họ và tên theo hộ chiếu."
+        },
+        "example": {
+          "ko": "예시용 가상 성명: KIM / MIN SU",
+          "en": "Fictional example: KIM / MIN SU",
+          "zh": "虚构示例：KIM / MIN SU",
+          "id": "Contoh fiktif: KIM / MIN SU",
+          "hi": "काल्पनिक उदाहरण: KIM / MIN SU",
+          "vi": "Ví dụ giả định: KIM / MIN SU"
+        },
+        "mistake": {
+          "ko": "별명이나 여권과 다른 철자를 쓰지 마세요.",
+          "en": "Avoid nicknames or spelling different from your passport.",
+          "zh": "不要填写昵称或与护照不同的拼写。",
+          "id": "Jangan gunakan nama panggilan atau ejaan berbeda.",
+          "hi": "उपनाम या अलग वर्तनी न लिखें।",
+          "vi": "Không dùng biệt danh hay cách viết khác hộ chiếu."
+        },
+        "review": "pending"
+      },
+      {
+        "id": "birth",
+        "title": {
+          "ko": "생년월일",
+          "en": "Date of birth",
+          "zh": "出生日期",
+          "id": "Tanggal lahir",
+          "hi": "जन्म तिथि",
+          "vi": "Ngày sinh"
+        },
+        "help": {
+          "ko": "서식에 표시된 연·월·일 순서를 확인하고 여권과 일치하게 작성하세요.",
+          "en": "Check the year/month/day order on the form and match your passport.",
+          "zh": "确认表格的年、月、日顺序，并与护照一致。",
+          "id": "Periksa urutan tahun/bulan/tanggal dan samakan dengan paspor.",
+          "hi": "फ़ॉर्म का वर्ष/माह/दिन क्रम देखें और पासपोर्ट से मिलाएँ।",
+          "vi": "Kiểm tra thứ tự năm/tháng/ngày và ghi đúng hộ chiếu."
+        },
+        "example": {
+          "ko": "예시용 가상 날짜: 2000 / 01 / 02",
+          "en": "Fictional date: 2000 / 01 / 02",
+          "zh": "虚构日期：2000 / 01 / 02",
+          "id": "Tanggal fiktif: 2000 / 01 / 02",
+          "hi": "काल्पनिक तिथि: 2000 / 01 / 02",
+          "vi": "Ngày giả định: 2000 / 01 / 02"
+        },
+        "mistake": {
+          "ko": "월과 일을 바꿔 적지 마세요.",
+          "en": "Do not swap the month and day.",
+          "zh": "不要把月份和日期写反。",
+          "id": "Jangan tertukar bulan dan tanggal.",
+          "hi": "माह और दिन न बदलें।",
+          "vi": "Đừng đảo tháng và ngày."
+        },
+        "review": "pending"
+      },
+      {
+        "id": "passport",
+        "title": {
+          "ko": "여권 정보",
+          "en": "Passport details",
+          "zh": "护照信息",
+          "id": "Informasi paspor",
+          "hi": "पासपोर्ट विवरण",
+          "vi": "Thông tin hộ chiếu"
+        },
+        "help": {
+          "ko": "여권번호·발급일·만료일은 여권 원본을 보면서 종이 서식에 작성하세요.",
+          "en": "Copy number, issue date and expiry from your passport onto the paper form.",
+          "zh": "请对照护照原件，在纸质表格填写号码、签发日期和有效期。",
+          "id": "Salin nomor, tanggal terbit dan kedaluwarsa ke formulir kertas.",
+          "hi": "मूल पासपोर्ट देखकर संख्या, जारी और समाप्ति तिथि कागज़ पर लिखें।",
+          "vi": "Đối chiếu hộ chiếu gốc để điền số, ngày cấp và ngày hết hạn vào đơn giấy."
+        },
+        "example": {
+          "ko": "예시 값 대신 본인 여권 원본을 확인하세요.",
+          "en": "Use your original passport, not an example value.",
+          "zh": "请查看本人护照原件，不要抄示例值。",
+          "id": "Gunakan paspor asli, bukan nilai contoh.",
+          "hi": "उदाहरण की जगह अपना मूल पासपोर्ट देखें।",
+          "vi": "Dùng hộ chiếu gốc, không chép giá trị mẫu."
+        },
+        "mistake": {
+          "ko": "숫자 0과 알파벳 O를 혼동하지 마세요.",
+          "en": "Check digit 0 versus letter O.",
+          "zh": "注意数字0和字母O的区别。",
+          "id": "Bedakan angka 0 dan huruf O.",
+          "hi": "अंक 0 और अक्षर O में अंतर देखें।",
+          "vi": "Phân biệt số 0 và chữ O."
+        },
+        "review": "pending"
+      },
+      {
+        "id": "address",
+        "title": {
+          "ko": "국내 주소",
+          "en": "Address in Korea",
+          "zh": "韩国住址",
+          "id": "Alamat di Korea",
+          "hi": "कोरिया का पता",
+          "vi": "Địa chỉ tại Hàn Quốc"
+        },
+        "help": {
+          "ko": "실제 거주 주소를 서식에 적고 동·호수 등 상세 주소를 확인하세요. 증빙서류는 직원에게 확인하세요.",
+          "en": "Write your actual Korean address including unit details. Ask staff which proof is required.",
+          "zh": "填写实际韩国住址及楼栋、房号。住所证明材料请咨询工作人员。",
+          "id": "Tulis alamat sebenarnya termasuk nomor unit. Tanyakan bukti yang diperlukan.",
+          "hi": "वास्तविक कोरियाई पता और यूनिट लिखें। आवश्यक प्रमाण कर्मचारी से पूछें।",
+          "vi": "Ghi địa chỉ thực tế, cả tòa nhà và số phòng. Hỏi nhân viên về giấy tờ chứng minh."
+        },
+        "example": {
+          "ko": "예시용 가상 주소: ○○로 10, 101호",
+          "en": "Fictional example: 10, XX-ro, Unit 101",
+          "zh": "虚构示例：○○路10号101室",
+          "id": "Contoh fiktif: 10, XX-ro, Unit 101",
+          "hi": "काल्पनिक उदाहरण: 10, XX-ro, Unit 101",
+          "vi": "Ví dụ giả định: 10, XX-ro, phòng 101"
+        },
+        "mistake": {
+          "ko": "건물명만 적거나 동·호수를 빠뜨리지 마세요.",
+          "en": "Do not omit street or unit details.",
+          "zh": "不要只写楼名或遗漏房号。",
+          "id": "Jangan hilangkan jalan atau nomor unit.",
+          "hi": "सड़क या यूनिट का विवरण न छोड़ें।",
+          "vi": "Đừng chỉ ghi tên tòa nhà hoặc bỏ số phòng."
+        },
+        "review": "pending"
+      },
+      {
+        "id": "contact",
+        "title": {
+          "ko": "연락처",
+          "en": "Contact number",
+          "zh": "联系电话",
+          "id": "Nomor kontak",
+          "hi": "संपर्क नंबर",
+          "vi": "Số liên hệ"
+        },
+        "help": {
+          "ko": "연락 가능한 전화번호를 종이 신청서에 작성하세요. 이 앱에는 입력하지 않아요.",
+          "en": "Write a reachable phone number on the paper form, not in this app.",
+          "zh": "在纸质申请表填写可联系到您的电话，请勿在本应用输入。",
+          "id": "Tulis nomor yang bisa dihubungi di kertas, bukan di aplikasi.",
+          "hi": "संपर्क नंबर कागज़ी फ़ॉर्म पर लिखें, ऐप में नहीं।",
+          "vi": "Ghi số có thể liên lạc vào đơn giấy, không nhập vào ứng dụng."
+        },
+        "example": {
+          "ko": "본인이 사용하는 연락처",
+          "en": "A number you can be reached at",
+          "zh": "可联系到本人的号码",
+          "id": "Nomor yang dapat dihubungi",
+          "hi": "आपसे संपर्क का नंबर",
+          "vi": "Số có thể liên hệ với bạn"
+        },
+        "mistake": {
+          "ko": "사용하지 않는 번호나 잘못된 숫자가 없는지 확인하세요.",
+          "en": "Check that the number is current and correct.",
+          "zh": "确认号码仍在使用且无误。",
+          "id": "Pastikan nomor aktif dan benar.",
+          "hi": "नंबर चालू और सही होना चाहिए।",
+          "vi": "Kiểm tra số còn dùng và chính xác."
+        },
+        "review": "pending"
+      },
+      {
+        "id": "signature",
+        "title": {
+          "ko": "신청일과 서명",
+          "en": "Date and signature",
+          "zh": "申请日期和签名",
+          "id": "Tanggal dan tanda tangan",
+          "hi": "तिथि और हस्ताक्षर",
+          "vi": "Ngày và chữ ký"
+        },
+        "help": {
+          "ko": "해당 서식의 신청일과 서명란을 확인하세요. 대리 신청은 직원의 안내를 받으세요.",
+          "en": "Check the date and signature fields. Ask staff about applications by a representative.",
+          "zh": "确认申请日期和签名栏。代理申请请咨询工作人员。",
+          "id": "Periksa tanggal dan tanda tangan. Tanyakan pengajuan oleh perwakilan kepada petugas.",
+          "hi": "तिथि और हस्ताक्षर के खाने देखें। प्रतिनिधि आवेदन के लिए कर्मचारी से पूछें।",
+          "vi": "Kiểm tra ngày và ô ký tên. Hỏi nhân viên nếu nộp thay."
+        },
+        "example": {
+          "ko": "방문 당일 날짜 / 본인 서명",
+          "en": "Visit date / your signature",
+          "zh": "到访当天日期 / 本人签名",
+          "id": "Tanggal kunjungan / tanda tangan Anda",
+          "hi": "आने की तिथि / आपके हस्ताक्षर",
+          "vi": "Ngày đến / chữ ký của bạn"
+        },
+        "mistake": {
+          "ko": "서명 누락 여부를 확인하세요.",
+          "en": "Check for a missing signature.",
+          "zh": "请确认没有漏签。",
+          "id": "Pastikan tanda tangan tidak terlewat.",
+          "hi": "हस्ताक्षर करना न भूलें।",
+          "vi": "Kiểm tra không bỏ sót chữ ký."
+        },
+        "review": "pending"
+      }
+    ],
+    "ui": {
+      "office": {
+        "ko": "제주출입국·외국인청 방문 안내",
+        "en": "Jeju Immigration Office visit guide",
+        "zh": "济州出入境·外国人厅办事指南",
+        "id": "Panduan kunjungan Imigrasi Jeju",
+        "hi": "जेजू आव्रजन कार्यालय मार्गदर्शिका",
+        "vi": "Hướng dẫn đến Cơ quan Xuất nhập cảnh Jeju"
+      },
+      "pilot": {
+        "ko": "비공식 시범 서비스",
+        "en": "Unofficial pilot service",
+        "zh": "非官方试运行服务",
+        "id": "Layanan uji coba tidak resmi",
+        "hi": "अनौपचारिक परीक्षण सेवा",
+        "vi": "Dịch vụ thử nghiệm không chính thức"
+      },
+      "pilotBody": {
+        "ko": "공식기관 승인을 받지 않은 테스트 안내입니다. 확정되지 않은 내용은 직원에게 확인하세요.",
+        "en": "This test guide is not approved by the office. Confirm unverified information with staff.",
+        "zh": "本测试指南未经官方批准。未经确认的信息请咨询工作人员。",
+        "id": "Panduan uji coba ini belum disetujui kantor. Konfirmasikan informasi kepada petugas.",
+        "hi": "यह परीक्षण मार्गदर्शिका कार्यालय से अनुमोदित नहीं है। अपुष्ट जानकारी कर्मचारी से पूछें।",
+        "vi": "Hướng dẫn thử nghiệm chưa được cơ quan phê duyệt. Hãy xác nhận thông tin với nhân viên."
+      },
+      "heading": {
+        "ko": "무엇을 도와드릴까요?",
+        "en": "How can we help you?",
+        "zh": "您需要办理什么业务？",
+        "id": "Ada yang bisa kami bantu?",
+        "hi": "हम आपकी क्या मदद कर सकते हैं?",
+        "vi": "Bạn cần hỗ trợ việc gì?"
+      },
+      "intro": {
+        "ko": "민원을 선택하면 필요한 준비를 한 단계씩 안내해 드려요.",
+        "en": "Choose your service. We will guide you one step at a time.",
+        "zh": "选择业务后，我们将逐步引导您准备。",
+        "id": "Pilih layanan. Kami akan memandu Anda langkah demi langkah.",
+        "hi": "अपनी सेवा चुनें। हम हर चरण में मार्गदर्शन करेंगे।",
+        "vi": "Chọn dịch vụ. Chúng tôi sẽ hướng dẫn từng bước."
+      },
+      "language": {
+        "ko": "언어 선택",
+        "en": "Choose language",
+        "zh": "选择语言",
+        "id": "Pilih bahasa",
+        "hi": "भाषा चुनें",
+        "vi": "Chọn ngôn ngữ"
+      },
+      "help": {
+        "ko": "직원에게 도움 요청",
+        "en": "Ask staff for help",
+        "zh": "向工作人员求助",
+        "id": "Minta bantuan petugas",
+        "hi": "कर्मचारी से मदद माँगें",
+        "vi": "Nhờ nhân viên hỗ trợ"
+      },
+      "helpTitle": {
+        "ko": "이 화면을 직원에게 보여주세요",
+        "en": "Show this screen to staff",
+        "zh": "请向工作人员出示此屏幕",
+        "id": "Tunjukkan layar ini kepada petugas",
+        "hi": "यह स्क्रीन कर्मचारी को दिखाएँ",
+        "vi": "Cho nhân viên xem màn hình này"
+      },
+      "helpBody": {
+        "ko": "다음 절차나 위치를 잘 모르겠습니다. 안내를 부탁드립니다.",
+        "en": "I am not sure about the next step or location. Please help me.",
+        "zh": "我不清楚下一步或地点。请帮助我。",
+        "id": "Saya belum memahami langkah berikutnya atau lokasinya. Mohon bantuannya.",
+        "hi": "मुझे अगला चरण या स्थान समझ नहीं आ रहा। कृपया मदद करें।",
+        "vi": "Tôi chưa rõ bước tiếp theo hoặc vị trí. Xin hãy giúp tôi."
+      },
+      "close": {
+        "ko": "닫기",
+        "en": "Close",
+        "zh": "关闭",
+        "id": "Tutup",
+        "hi": "बंद करें",
+        "vi": "Đóng"
+      },
+      "back": {
+        "ko": "이전",
+        "en": "Back",
+        "zh": "返回",
+        "id": "Kembali",
+        "hi": "वापस",
+        "vi": "Quay lại"
+      },
+      "home": {
+        "ko": "처음으로",
+        "en": "Home",
+        "zh": "首页",
+        "id": "Beranda",
+        "hi": "होम",
+        "vi": "Trang đầu"
+      },
+      "prepare": {
+        "ko": "안내 순서 살펴보기",
+        "en": "Review your steps",
+        "zh": "查看办理步骤",
+        "id": "Lihat langkah Anda",
+        "hi": "अपने चरण देखें",
+        "vi": "Xem các bước của bạn"
+      },
+      "prepareBody": {
+        "ko": "복사·수입인지·등록증 비용 납부가 필요하다고 안내받은 경우에만 해당 단계를 추가하세요. 잘 모르겠다면 선택하지 않고 진행한 뒤 도움을 요청할 수 있어요.",
+        "en": "Add copying, stamps or card payment only when you have been told they are needed. If unsure, leave them off and ask staff when you need help.",
+        "zh": "只有在收到相关指示时，才添加复印、印花税票或证件费用缴纳步骤。不确定时可先不选，需要时向工作人员求助。",
+        "id": "Tambahkan fotokopi, meterai, atau pembayaran kartu hanya jika Anda diberi tahu bahwa itu diperlukan. Jika ragu, jangan pilih dulu dan minta bantuan petugas.",
+        "hi": "प्रतिलिपि, शुल्क टिकट या कार्ड शुल्क का चरण तभी जोड़ें जब आपको बताया गया हो कि इसकी ज़रूरत है। संदेह होने पर इसे न चुनें और ज़रूरत पड़ने पर कर्मचारी से मदद माँगें।",
+        "vi": "Chỉ thêm bước sao chụp, mua tem lệ phí hoặc nộp phí thẻ khi bạn được hướng dẫn làm việc đó. Nếu chưa rõ, cứ để trống và hỏi nhân viên khi cần."
+      },
+      "copyOption": {
+        "ko": "여권 복사가 필요하다고 안내받았어요",
+        "en": "Staff said I need a passport copy",
+        "zh": "工作人员要求提供护照复印件",
+        "id": "Petugas meminta salinan paspor",
+        "hi": "कर्मचारी ने पासपोर्ट की प्रति माँगी है",
+        "vi": "Nhân viên yêu cầu bản sao hộ chiếu"
+      },
+      "stampOption": {
+        "ko": "수입인지 구매가 필요하다고 안내받았어요",
+        "en": "Staff said I need a revenue stamp",
+        "zh": "工作人员要求购买收入印花",
+        "id": "Petugas meminta meterai pendapatan",
+        "hi": "कर्मचारी ने राजस्व स्टाम्प खरीदने को कहा है",
+        "vi": "Nhân viên yêu cầu mua tem lệ phí"
+      },
+      "cardOption": {
+        "ko": "등록증 발급비용 납부가 필요하다고 안내받았어요",
+        "en": "Staff said I need to pay a card issuance fee",
+        "zh": "工作人员要求缴纳登记证制证费",
+        "id": "Petugas meminta pembayaran biaya kartu",
+        "hi": "कर्मचारी ने कार्ड जारी करने का शुल्क देने को कहा है",
+        "vi": "Nhân viên yêu cầu nộp phí cấp thẻ"
+      },
+      "start": {
+        "ko": "안내 시작하기",
+        "en": "Start my guide",
+        "zh": "开始引导",
+        "id": "Mulai panduan",
+        "hi": "मार्गदर्शिका शुरू करें",
+        "vi": "Bắt đầu hướng dẫn"
+      },
+      "route": {
+        "ko": "나의 안내 순서",
+        "en": "My steps",
+        "zh": "我的办理步骤",
+        "id": "Langkah saya",
+        "hi": "मेरे चरण",
+        "vi": "Các bước của tôi"
+      },
+      "pending": {
+        "ko": "검수 대기",
+        "en": "Pending review",
+        "zh": "待审核",
+        "id": "Menunggu peninjauan",
+        "hi": "समीक्षा लंबित",
+        "vi": "Chờ duyệt"
+      },
+      "reviewed": {
+        "ko": "검수 완료",
+        "en": "Reviewed",
+        "zh": "已审核",
+        "id": "Sudah ditinjau",
+        "hi": "समीक्षित",
+        "vi": "Đã duyệt"
+      },
+      "location": {
+        "ko": "어디로 가나요?",
+        "en": "Where do I go?",
+        "zh": "去哪里？",
+        "id": "Ke mana saya pergi?",
+        "hi": "मुझे कहाँ जाना है?",
+        "vi": "Tôi cần đến đâu?"
+      },
+      "locationPending": {
+        "ko": "실제 위치가 아직 확인되지 않았습니다. 안내 직원에게 물어보세요.",
+        "en": "The actual location has not been verified. Ask the information desk.",
+        "zh": "实际位置尚未确认。请询问服务台工作人员。",
+        "id": "Lokasi belum diverifikasi. Tanyakan kepada petugas informasi.",
+        "hi": "वास्तविक स्थान की पुष्टि नहीं हुई है। सूचना डेस्क से पूछें।",
+        "vi": "Vị trí thực tế chưa được xác minh. Hãy hỏi nhân viên hướng dẫn."
+      },
+      "bring": {
+        "ko": "준비물과 확인 사항",
+        "en": "Bring and check",
+        "zh": "材料与确认事项",
+        "id": "Persiapan dan pemeriksaan",
+        "hi": "तैयारी और जाँच",
+        "vi": "Giấy tờ và nội dung cần kiểm tra"
+      },
+      "warning": {
+        "ko": "꼭 확인하세요",
+        "en": "Please check",
+        "zh": "请务必确认",
+        "id": "Harap periksa",
+        "hi": "कृपया जाँचें",
+        "vi": "Hãy kiểm tra"
+      },
+      "fee": {
+        "ko": "수수료 안내",
+        "en": "Fee guidance",
+        "zh": "费用说明",
+        "id": "Panduan biaya",
+        "hi": "शुल्क की जानकारी",
+        "vi": "Hướng dẫn lệ phí"
+      },
+      "complete": {
+        "ko": "이 단계를 마쳤어요",
+        "en": "I completed this step",
+        "zh": "我已完成此步骤",
+        "id": "Langkah ini selesai",
+        "hi": "मैंने यह चरण पूरा किया",
+        "vi": "Tôi đã hoàn thành bước này"
+      },
+      "undo": {
+        "ko": "완료 표시 취소",
+        "en": "Undo completion",
+        "zh": "取消完成标记",
+        "id": "Batalkan selesai",
+        "hi": "पूर्णता चिह्न हटाएँ",
+        "vi": "Bỏ đánh dấu hoàn thành"
+      },
+      "next": {
+        "ko": "다음 단계",
+        "en": "Next step",
+        "zh": "下一步",
+        "id": "Langkah berikutnya",
+        "hi": "अगला चरण",
+        "vi": "Bước tiếp theo"
+      },
+      "checklist": {
+        "ko": "완료 체크리스트",
+        "en": "Completion checklist",
+        "zh": "完成清单",
+        "id": "Daftar penyelesaian",
+        "hi": "पूर्णता सूची",
+        "vi": "Danh sách hoàn thành"
+      },
+      "selfreport": {
+        "ko": "완료 표시는 본인 확인용입니다. 실제 납부·접수·승인 여부를 확인하지 않습니다.",
+        "en": "Checks are self-reported. This app does not verify payments, submission or approval.",
+        "zh": "勾选仅为个人记录。本应用不核实付款、受理或审批结果。",
+        "id": "Centang adalah laporan Anda sendiri. Aplikasi tidak memverifikasi pembayaran, pengajuan, atau persetujuan.",
+        "hi": "चेक केवल आपकी अपनी पुष्टि है। ऐप भुगतान, आवेदन या स्वीकृति की पुष्टि नहीं करता।",
+        "vi": "Đánh dấu do bạn tự xác nhận. Ứng dụng không xác minh thanh toán, nộp hồ sơ hay phê duyệt."
+      },
+      "finish": {
+        "ko": "내 준비 확인하기",
+        "en": "Review my preparation",
+        "zh": "查看我的准备情况",
+        "id": "Tinjau persiapan saya",
+        "hi": "मेरी तैयारी देखें",
+        "vi": "Xem lại việc chuẩn bị"
+      },
+      "doneTitle": {
+        "ko": "안내를 모두 확인했어요",
+        "en": "You have reviewed the guide",
+        "zh": "您已查看全部指南",
+        "id": "Panduan telah ditinjau",
+        "hi": "आपने मार्गदर्शिका देख ली है",
+        "vi": "Bạn đã xem hết hướng dẫn"
+      },
+      "doneBody": {
+        "ko": "이 화면은 민원 접수증이나 승인 증명이 아닙니다. 남은 절차와 접수 여부는 직원에게 확인하세요.",
+        "en": "This is not a receipt or approval. Ask staff about remaining steps and submission status.",
+        "zh": "此屏幕不是受理回执或批准证明。请向工作人员确认后续步骤和受理情况。",
+        "id": "Layar ini bukan tanda terima atau persetujuan. Konfirmasikan langkah dan status pengajuan kepada petugas.",
+        "hi": "यह रसीद या स्वीकृति नहीं है। शेष चरण और आवेदन की स्थिति कर्मचारी से पूछें।",
+        "vi": "Đây không phải biên nhận hay xác nhận phê duyệt. Hỏi nhân viên về các bước còn lại và tình trạng hồ sơ."
+      },
+      "resume": {
+        "ko": "이어서 진행하기",
+        "en": "Continue my guide",
+        "zh": "继续办理",
+        "id": "Lanjutkan panduan",
+        "hi": "मार्गदर्शिका जारी रखें",
+        "vi": "Tiếp tục hướng dẫn"
+      },
+      "reset": {
+        "ko": "진행 기록 지우기",
+        "en": "Clear my progress",
+        "zh": "清除进度",
+        "id": "Hapus progres",
+        "hi": "प्रगति मिटाएँ",
+        "vi": "Xóa tiến trình"
+      },
+      "restored": {
+        "ko": "이 기기에 저장된 진행 기록을 불러왔어요.",
+        "en": "Your progress on this device has been restored.",
+        "zh": "已恢复此设备上保存的进度。",
+        "id": "Progres di perangkat ini telah dipulihkan.",
+        "hi": "इस उपकरण पर सहेजी गई प्रगति बहाल हो गई है।",
+        "vi": "Đã khôi phục tiến trình trên thiết bị này."
+      },
+      "privacy": {
+        "ko": "로그인 없이 · 개인정보 입력 없이",
+        "en": "No login · No personal details",
+        "zh": "无需登录 · 无需填写个人信息",
+        "id": "Tanpa login · Tanpa data pribadi",
+        "hi": "लॉगिन नहीं · निजी जानकारी नहीं",
+        "vi": "Không đăng nhập · Không nhập dữ liệu cá nhân"
+      },
+      "saved": {
+        "ko": "진행 기록은 이 기기에만 24시간 저장돼요.",
+        "en": "Progress stays on this device for up to 24 hours.",
+        "zh": "进度仅在此设备上保存24小时。",
+        "id": "Progres disimpan di perangkat ini hingga 24 jam.",
+        "hi": "प्रगति केवल इस उपकरण पर 24 घंटे तक रहती है।",
+        "vi": "Tiến trình chỉ lưu trên thiết bị này tối đa 24 giờ."
+      },
+      "storageUnavailable": {
+        "ko": "기기에 기록을 저장할 수 없어 화면을 닫으면 진행 기록이 사라질 수 있어요.",
+        "en": "Device storage is unavailable. Progress may be lost when you close this page.",
+        "zh": "设备存储不可用。关闭页面后进度可能丢失。",
+        "id": "Penyimpanan perangkat tidak tersedia. Progres dapat hilang saat halaman ditutup.",
+        "hi": "उपकरण पर सहेजना उपलब्ध नहीं है। पेज बंद करने पर प्रगति खो सकती है।",
+        "vi": "Không thể lưu trên thiết bị. Tiến trình có thể mất khi đóng trang."
+      },
+      "formHelper": {
+        "ko": "통합신청서 작성 도우미",
+        "en": "Application form helper",
+        "zh": "综合申请表填写助手",
+        "id": "Bantuan formulir permohonan",
+        "hi": "आवेदन फ़ॉर्म सहायता",
+        "vi": "Hỗ trợ điền đơn tổng hợp"
+      },
+      "formIntro": {
+        "ko": "종이 신청서를 작성하기 위한 설명입니다. 이 앱에는 개인정보를 입력하지 마세요. 현장 최신 서식과 다른 부분은 직원에게 확인하세요.",
+        "en": "Guidance for your paper form. Do not enter personal data in this app. Ask staff if the current form differs.",
+        "zh": "这是纸质申请表填写说明。请勿在本应用输入个人信息。若与现场最新表格不同，请咨询工作人员。",
+        "id": "Panduan mengisi formulir kertas. Jangan masukkan data pribadi ke aplikasi. Tanyakan jika formulir terbaru berbeda.",
+        "hi": "यह कागज़ी फ़ॉर्म भरने की सहायता है। ऐप में निजी जानकारी न डालें। वर्तमान फ़ॉर्म अलग हो तो कर्मचारी से पूछें।",
+        "vi": "Hướng dẫn điền đơn giấy. Không nhập dữ liệu cá nhân vào ứng dụng. Hỏi nhân viên nếu mẫu hiện tại khác."
+      },
+      "example": {
+        "ko": "작성 예시",
+        "en": "Example",
+        "zh": "示例",
+        "id": "Contoh",
+        "hi": "उदाहरण",
+        "vi": "Ví dụ"
+      },
+      "mistake": {
+        "ko": "자주 하는 실수",
+        "en": "Common mistake",
+        "zh": "常见错误",
+        "id": "Kesalahan umum",
+        "hi": "सामान्य गलती",
+        "vi": "Lỗi thường gặp"
+      },
+      "officialForm": {
+        "ko": "공식 서식 안내 보기",
+        "en": "Official form information",
+        "zh": "查看官方表格说明",
+        "id": "Informasi formulir resmi",
+        "hi": "आधिकारिक फ़ॉर्म जानकारी",
+        "vi": "Xem thông tin mẫu đơn chính thức"
+      },
+      "facilities": {
+        "ko": "시설 안내",
+        "en": "Facilities",
+        "zh": "设施指南",
+        "id": "Fasilitas",
+        "hi": "सुविधाएँ",
+        "vi": "Hướng dẫn cơ sở"
+      },
+      "facilityIntro": {
+        "ko": "시설의 위치와 사진은 현장 확인 후 추가됩니다. 실내 위치 추적은 사용하지 않아요.",
+        "en": "Locations and photos will be added after on-site verification. No indoor tracking is used.",
+        "zh": "位置和照片将在现场确认后添加。本应用不使用室内定位。",
+        "id": "Lokasi dan foto ditambahkan setelah verifikasi di lokasi. Tidak ada pelacakan dalam ruangan.",
+        "hi": "स्थल पर पुष्टि के बाद स्थान और तस्वीरें जोड़ी जाएँगी। अंदर स्थान ट्रैक नहीं किया जाता।",
+        "vi": "Vị trí và ảnh sẽ được thêm sau khi kiểm tra tại chỗ. Không sử dụng định vị trong nhà."
+      },
+      "floorplan": {
+        "ko": "청사 평면도",
+        "en": "Office floor plan",
+        "zh": "办公楼平面图",
+        "id": "Denah kantor",
+        "hi": "कार्यालय का नक्शा",
+        "vi": "Sơ đồ văn phòng"
+      },
+      "floorplanPending": {
+        "ko": "검증된 평면도가 아직 등록되지 않았어요.",
+        "en": "No verified floor plan has been added yet.",
+        "zh": "尚未添加经核实的平面图。",
+        "id": "Denah terverifikasi belum tersedia.",
+        "hi": "सत्यापित नक्शा अभी उपलब्ध नहीं है।",
+        "vi": "Chưa có sơ đồ đã được xác minh."
+      },
+      "photo": {
+        "ko": "시설 사진",
+        "en": "Facility photo",
+        "zh": "设施照片",
+        "id": "Foto fasilitas",
+        "hi": "सुविधा की तस्वीर",
+        "vi": "Ảnh cơ sở"
+      },
+      "routeImage": {
+        "ko": "확인된 이동 경로",
+        "en": "Verified route",
+        "zh": "已确认路线",
+        "id": "Rute terverifikasi",
+        "hi": "सत्यापित मार्ग",
+        "vi": "Lộ trình đã xác minh"
+      },
+      "qr": {
+        "ko": "시설 QR코드",
+        "en": "Facility QR code",
+        "zh": "设施二维码",
+        "id": "Kode QR fasilitas",
+        "hi": "सुविधा QR कोड",
+        "vi": "Mã QR cơ sở"
+      },
+      "downloadQr": {
+        "ko": "QR 다운로드 (SVG)",
+        "en": "Download QR (SVG)",
+        "zh": "下载二维码 (SVG)",
+        "id": "Unduh QR (SVG)",
+        "hi": "QR डाउनलोड करें (SVG)",
+        "vi": "Tải QR (SVG)"
+      },
+      "notices": {
+        "ko": "알려드려요",
+        "en": "Notices",
+        "zh": "通知",
+        "id": "Pengumuman",
+        "hi": "सूचनाएँ",
+        "vi": "Thông báo"
+      },
+      "sources": {
+        "ko": "공식 참고 자료",
+        "en": "Official references",
+        "zh": "官方参考资料",
+        "id": "Referensi resmi",
+        "hi": "आधिकारिक संदर्भ",
+        "vi": "Tài liệu tham khảo chính thức"
+      },
+      "checked": {
+        "ko": "자료 확인일",
+        "en": "Source checked",
+        "zh": "资料查阅日期",
+        "id": "Tanggal pemeriksaan sumber",
+        "hi": "स्रोत जाँच की तारीख",
+        "vi": "Ngày kiểm tra nguồn"
+      },
+      "offline": {
+        "ko": "오프라인 상태입니다. 저장된 안내는 오래되었을 수 있으니 직원에게 확인하세요.",
+        "en": "You are offline. Saved guidance may be outdated; confirm with staff.",
+        "zh": "您处于离线状态。已保存的指南可能过时，请咨询工作人员。",
+        "id": "Anda sedang offline. Panduan tersimpan mungkin usang; tanyakan kepada petugas.",
+        "hi": "आप ऑफ़लाइन हैं। सहेजी जानकारी पुरानी हो सकती है; कर्मचारी से पुष्टि करें।",
+        "vi": "Bạn đang ngoại tuyến. Hướng dẫn đã lưu có thể cũ; hãy xác nhận với nhân viên."
+      },
+      "contentError": {
+        "ko": "안내 정보를 갱신하지 못했어요. 기본 시범 안내를 표시합니다. 직원에게 확인하세요.",
+        "en": "Could not refresh guidance. Showing the pilot baseline. Please ask staff.",
+        "zh": "无法更新指南。当前显示试运行基础内容，请咨询工作人员。",
+        "id": "Panduan gagal diperbarui. Menampilkan panduan uji coba dasar. Tanyakan kepada petugas.",
+        "hi": "जानकारी अपडेट नहीं हुई। मूल परीक्षण मार्गदर्शिका दिखाई जा रही है। कर्मचारी से पूछें।",
+        "vi": "Không cập nhật được hướng dẫn. Đang hiển thị bản thử nghiệm gốc. Hãy hỏi nhân viên."
+      },
+      "update": {
+        "ko": "안내가 변경되어 기존 진행 기록을 초기화했어요.",
+        "en": "Guidance changed, so previous progress was cleared.",
+        "zh": "指南已更新，之前的进度已清除。",
+        "id": "Panduan berubah; progres sebelumnya dihapus.",
+        "hi": "मार्गदर्शिका बदल गई है; पिछली प्रगति मिटा दी गई।",
+        "vi": "Hướng dẫn đã thay đổi nên tiến trình cũ đã được xóa."
+      },
+      "install": {
+        "ko": "홈 화면에 추가해 사용할 수 있어요. iPhone: 공유 → 홈 화면에 추가. Android: 브라우저 메뉴 → 앱 설치.",
+        "en": "Install from your browser. iPhone: Share → Add to Home Screen. Android: menu → Install app.",
+        "zh": "可添加到主屏幕。iPhone：分享 → 添加到主屏幕。Android：浏览器菜单 → 安装应用。",
+        "id": "Pasang melalui browser. iPhone: Bagikan → Tambah ke Layar Utama. Android: menu → Instal aplikasi.",
+        "hi": "ब्राउज़र से इंस्टॉल करें। iPhone: साझा करें → होम स्क्रीन पर जोड़ें। Android: मेनू → ऐप इंस्टॉल करें।",
+        "vi": "Cài qua trình duyệt. iPhone: Chia sẻ → Thêm vào MH chính. Android: menu → Cài đặt ứng dụng."
+      },
+      "completedCount": {
+        "ko": "완료",
+        "en": "completed",
+        "zh": "已完成",
+        "id": "selesai",
+        "hi": "पूर्ण",
+        "vi": "hoàn thành"
+      },
+      "noService": {
+        "ko": "민원을 먼저 선택하세요.",
+        "en": "Choose a service first.",
+        "zh": "请先选择业务。",
+        "id": "Pilih layanan terlebih dahulu.",
+        "hi": "पहले सेवा चुनें।",
+        "vi": "Hãy chọn dịch vụ trước."
+      },
+      "returnGuide": {
+        "ko": "진행 중인 안내로 돌아가기",
+        "en": "Return to my guide",
+        "zh": "返回当前指南",
+        "id": "Kembali ke panduan saya",
+        "hi": "मेरी मार्गदर्शिका पर लौटें",
+        "vi": "Quay lại hướng dẫn của tôi"
+      },
+      "confirmNeeded": {
+        "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
+        "en": "Pending review: confirm required documents and amounts with staff.",
+        "zh": "待审核：请向工作人员确认所需材料和金额。",
+        "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
+        "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
+        "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+      },
+      "newVisit": {
+        "ko": "다른 민원 시작하기",
+        "en": "Start another service",
+        "zh": "开始其他业务",
+        "id": "Mulai layanan lain",
+        "hi": "दूसरी सेवा शुरू करें",
+        "vi": "Bắt đầu dịch vụ khác"
+      },
+      "noPayment": {
+        "ko": "앱에서는 결제하거나 신청서를 제출할 수 없어요.",
+        "en": "You cannot pay or submit an application through this app.",
+        "zh": "本应用不支持付款或提交申请。",
+        "id": "Aplikasi ini tidak menerima pembayaran atau pengajuan.",
+        "hi": "इस ऐप से भुगतान या आवेदन जमा नहीं किया जा सकता।",
+        "vi": "Không thể thanh toán hay nộp đơn qua ứng dụng."
+      }
+    },
+    "sources": [
+      {
+        "id": "moj-form",
+        "title": "법무부: 통합신청서(신고서) 안내",
+        "url": "https://www.moj.go.kr/bbs/moj/93/561864/artclView.do",
+        "checkedAt": "2026-10-22T10:00:00.000Z",
+        "scope": "Official form purpose and availability only. Notice dated 2022-08-04. Current local form, field guidance, translations, fees and workflow require staff review."
+      },
+      {
+        "id": "hikorea",
+        "title": "Hi Korea: 민원서식",
+        "url": "https://www.hikorea.go.kr/board/BoardApplicationListR.pt",
+        "checkedAt": "2026-10-22T10:00:00.000Z",
+        "scope": "Official current form discovery page. No claim that the downloaded current revision was verified."
+      }
+    ]
+  },
+  "audit": [
+    {
+      "id": "00e5b2dd-040b-41ed-8dd3-55adb0caac21",
+      "at": "2026-10-22T04:20:52.396Z",
+      "actor": "VISABLE GUIDE maintainer",
+      "reason": "반복되는 직원 확인 단계 제거 및 기타 민원 문의 흐름 정리",
+      "revision": 2,
+      "previousHash": "",
+      "hash": "eb34f29574d07e2b4a0ffbadb13c216aa51a32e9834003d0240a4e6dd70e0004",
+      "changed": [
+        "revision",
+        "updatedAt",
+        "services",
+        "steps",
+        "ui"
+      ]
+    }
+  ]
+}
