@@ -1,0 +1,36 @@
+{
+  "base": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app",
+  "generatedAt": "2026-10-22T01:40:43.262Z",
+  "facilities": [
+    {
+      "id": "info",
+      "name": "안내 데스크",
+      "url": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/?facility=info"
+    },
+    {
+      "id": "forms",
+      "name": "신청서 작성 공간",
+      "url": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/?facility=forms"
+    },
+    {
+      "id": "copy",
+      "name": "여권 복사 시설",
+      "url": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/?facility=copy"
+    },
+    {
+      "id": "stamps",
+      "name": "수입인지 판매소",
+      "url": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/?facility=stamps"
+    },
+    {
+      "id": "atm",
+      "name": "등록증 발급비용 납부 ATM",
+      "url": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/?facility=atm"
+    },
+    {
+      "id": "counter",
+      "name": "접수창구·대기 공간",
+      "url": "https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/?facility=counter"
+    }
+  ]
+}

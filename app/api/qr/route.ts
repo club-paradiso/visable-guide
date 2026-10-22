@@ -1,0 +1,4 @@
+import QRCode from 'qrcode';
+import {readDocument} from '@/lib/store';
+export const runtime='nodejs';export const dynamic='force-dynamic';
+export async function GET(req:Request){const url=new URL(req.url);const facility=url.searchParams.get('facility');const content=(await readDocument()).content;if(facility&&!content.facilities.some(f=>f.id===facility))return new Response('Unknown facility',{status:404});const base=process.env.NEXT_PUBLIC_SITE_URL||url.origin;const target=new URL('/',base);if(facility)target.searchParams.set('facility',facility);const svg=await QRCode.toString(target.toString(),{type:'svg',errorCorrectionLevel:'M',margin:4,width:512});return new Response(svg,{headers:{'Content-Type':'image/svg+xml','Content-Disposition':`attachment; filename="visable-guide-${facility||'entrance'}.svg"`,'Cache-Control':'no-store'}});}
