@@ -8,7 +8,7 @@ Vercel project: visable-guide / Club Paradiso. Target: Preview. Runtime source c
 
 별도 Next.js 앱 구현 및 Vercel Preview 배포. 기존 VISABLE은 package.json 읽기만 수행했으며 수정·배포하지 않았습니다. 런타임 AI 호출 없음. 비공식 시범 표시와 검색엔진 noindex 유지.
 
-GitHub 저장소: https://github.com/club-paradiso/visable-guide (public). 사용자가 생성한 초기 README 커밋을 보존하여 MVP 소스를 업로드합니다. Vercel Git 연결 상태는 후속 배포에서 검증합니다.
+GitHub 저장소: https://github.com/club-paradiso/visable-guide (public). 사용자가 생성한 초기 README 커밋을 보존하여 56개 파일을 main에 업로드했습니다. preview/mvp 및 content 브랜치를 생성했고 기존 Vercel 프로젝트에 GitHub 저장소 연결을 완료했습니다. 이 문서의 Preview 브랜치 갱신으로 자동 배포를 검증합니다.
 
 관리자: 편집기, 인증, 권한 검사, 변경 이력, 로컬 영구 저장과 GitHub Contents 저장 코드는 구현했습니다. 배포 환경의 관리자 암호·세션키·제한된 저장 토큰은 미설정이므로 **온라인 관리자 로그인 및 게시 미활성화**. 기본 암호를 만들어 공개하지 않았습니다. README 절차에 따라 설정해야 합니다.
 
