@@ -26,8 +26,7 @@ export const contentSchema=z.object({
  for(const key of ['services','steps','facilities','formFields','notices','sources'] as const){if(new Set(v[key].map(x=>x.id)).size!==v[key].length)c.addIssue({code:'custom',message:`Duplicate ${key} IDs`});}
  for(const s of v.services){if(new Set(s.stepIds).size!==s.stepIds.length)c.addIssue({code:'custom',message:'Duplicate workflow steps'});for(const sid of s.stepIds)if(!v.steps.some(x=>x.id===sid))c.addIssue({code:'custom',message:`Unknown step ${sid}`});}
  for(const s of v.steps)if(!v.facilities.some(f=>f.id===s.facilityId))c.addIssue({code:'custom',message:`Unknown facility ${s.facilityId}`});
- if(!v.steps.some(s=>s.id==='confirm'&&s.condition==='always'))c.addIssue({code:'custom',message:'An always-on confirmation step is required'});
- for(const s of v.services)if(s.stepIds[0]!=='confirm')c.addIssue({code:'custom',message:'Every workflow must start with staff confirmation'});
+ for(const s of v.services){const first=v.steps.find(step=>step.id===s.stepIds[0]);if(first&&first.condition!=='always')c.addIssue({code:'custom',message:`Workflow ${s.id} must begin with an unconditional step`});}
 });
 export type Content=z.infer<typeof contentSchema>;
 export type Answers={copy:boolean;stamp:boolean;card:boolean};

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": 1,
-  "updatedAt": "2026-10-22T10:00:00.000Z",
+  "revision": 2,
+  "updatedAt": "2026-10-22T04:20:52.396Z",
   "notices": [
     {
       "id": "pilot-review",
@@ -46,7 +46,6 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "stepIds": [
-        "confirm",
         "form",
         "copy",
         "stamp",
@@ -82,7 +81,6 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "stepIds": [
-        "confirm",
         "form",
         "copy",
         "stamp",
@@ -118,7 +116,6 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "stepIds": [
-        "confirm",
         "form",
         "copy",
         "stamp",
@@ -154,7 +151,6 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "stepIds": [
-        "confirm",
         "form",
         "copy",
         "stamp",
@@ -190,7 +186,6 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "stepIds": [
-        "confirm",
         "form",
         "copy",
         "stamp",
@@ -226,29 +221,28 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "stepIds": [
-        "confirm",
-        "wait"
+        "inquiry"
       ]
     }
   ],
   "steps": [
     {
-      "id": "confirm",
+      "id": "inquiry",
       "title": {
-        "ko": "직원에게 필요한 절차 확인",
-        "en": "Confirm what you need with staff",
-        "zh": "向工作人员确认所需步骤",
-        "id": "Konfirmasikan langkah dengan petugas",
-        "hi": "कर्मचारी से आवश्यक चरण पूछें",
-        "vi": "Xác nhận các bước với nhân viên"
+        "ko": "민원 유형 문의",
+        "en": "Ask about your service",
+        "zh": "咨询办理业务类型",
+        "id": "Tanyakan jenis layanan Anda",
+        "hi": "अपनी सेवा के बारे में पूछें",
+        "vi": "Hỏi về loại thủ tục của bạn"
       },
       "body": {
-        "ko": "직원에게 민원 유형을 보여주고 신청서, 복사본, 수입인지와 등록증 발급비용이 필요한지 확인하세요. 추가 단계가 필요하면 이전 화면에서 선택을 바꾸세요.",
-        "en": "Show your service to staff. Ask whether a form, copies, stamps and a card fee are needed. Go back to change optional steps if needed.",
-        "zh": "向工作人员出示业务类型，确认是否需要申请表、复印件、收入印花和制证费。如需添加步骤，请返回修改。",
-        "id": "Tunjukkan layanan kepada petugas. Pastikan kebutuhan formulir, salinan, meterai dan biaya kartu. Kembali untuk mengubah langkah opsional.",
-        "hi": "कर्मचारी को सेवा दिखाएँ। फ़ॉर्म, प्रतियाँ, स्टाम्प और कार्ड शुल्क की आवश्यकता पूछें। ज़रूरत हो तो वापस जाकर चरण बदलें।",
-        "vi": "Cho nhân viên xem loại dịch vụ. Hỏi về đơn, bản sao, tem lệ phí và phí thẻ. Quay lại để thay đổi bước tùy chọn nếu cần."
+        "ko": "원하는 민원 내용을 직원에게 설명하거나 이 화면을 보여주세요. 담당 창구와 필요한 준비물은 직원 안내에 따라 확인하세요.",
+        "en": "Tell staff what you need or show them this screen. Ask which counter to visit and what to bring.",
+        "zh": "请向工作人员说明您要办理的事项，或出示此页面。请确认办理窗口及所需材料。",
+        "id": "Jelaskan keperluan Anda kepada petugas atau tunjukkan layar ini. Tanyakan loket dan dokumen yang diperlukan.",
+        "hi": "कर्मचारी को अपना काम बताएँ या यह स्क्रीन दिखाएँ। सही काउंटर और आवश्यक दस्तावेज़ पूछें।",
+        "vi": "Hãy nói với nhân viên việc bạn cần làm hoặc cho họ xem màn hình này. Hỏi quầy tiếp nhận và giấy tờ cần mang theo."
       },
       "warning": {
         "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
@@ -259,12 +253,12 @@
         "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
       },
       "preparation": {
-        "ko": "검수 대기: 직원에게 필요한 서류와 금액을 확인하세요.",
-        "en": "Pending review: confirm required documents and amounts with staff.",
-        "zh": "待审核：请向工作人员确认所需材料和金额。",
-        "id": "Menunggu peninjauan: pastikan dokumen dan biaya kepada petugas.",
-        "hi": "समीक्षा लंबित: आवश्यक दस्तावेज़ और राशि कर्मचारी से पूछें।",
-        "vi": "Chờ duyệt: xác nhận giấy tờ và số tiền với nhân viên."
+        "ko": "어떤 민원을 보러 왔는지 설명할 수 있으면 됩니다. 정확한 서류 목록은 직원에게 확인하세요.",
+        "en": "Be ready to describe your request. Ask staff for the exact document list.",
+        "zh": "请准备说明您的办理事项，并向工作人员确认具体材料清单。",
+        "id": "Siapkan penjelasan tentang keperluan Anda. Pastikan daftar dokumen kepada petugas.",
+        "hi": "अपना काम बताने के लिए तैयार रहें। दस्तावेज़ों की सही सूची कर्मचारी से पूछें।",
+        "vi": "Hãy chuẩn bị mô tả yêu cầu của bạn. Xác nhận danh sách giấy tờ với nhân viên."
       },
       "facilityId": "info",
       "condition": "always",
@@ -1061,20 +1055,20 @@
       "vi": "Trang đầu"
     },
     "prepare": {
-      "ko": "시작 전에 확인하세요",
-      "en": "Before you begin",
-      "zh": "开始前请确认",
-      "id": "Sebelum memulai",
-      "hi": "शुरू करने से पहले",
-      "vi": "Trước khi bắt đầu"
+      "ko": "안내 순서 살펴보기",
+      "en": "Review your steps",
+      "zh": "查看办理步骤",
+      "id": "Lihat langkah Anda",
+      "hi": "अपने चरण देखें",
+      "vi": "Xem các bước của bạn"
     },
     "prepareBody": {
-      "ko": "아래 단계는 필요하다고 안내받은 경우에만 추가하세요. 모르면 선택하지 말고 첫 단계에서 직원에게 확인하세요.",
-      "en": "Add optional steps only if staff told you they are needed. If unsure, leave them off and ask at the first step.",
-      "zh": "仅在工作人员告知需要时添加可选步骤。不确定时请勿勾选，先向工作人员确认。",
-      "id": "Tambahkan langkah opsional hanya jika diarahkan petugas. Jika ragu, biarkan kosong dan tanyakan di langkah pertama.",
-      "hi": "वैकल्पिक चरण तभी जोड़ें जब कर्मचारी ने कहा हो। अनिश्चित होने पर न चुनें और पहले चरण में पूछें।",
-      "vi": "Chỉ thêm bước tùy chọn khi nhân viên yêu cầu. Nếu chưa rõ, để trống và hỏi ở bước đầu tiên."
+      "ko": "복사·수입인지·등록증 비용 납부가 필요하다고 안내받은 경우에만 해당 단계를 추가하세요. 잘 모르겠다면 선택하지 않고 진행한 뒤 도움을 요청할 수 있어요.",
+      "en": "Add copying, stamps or card payment only when you have been told they are needed. If unsure, leave them off and ask staff when you need help.",
+      "zh": "只有在收到相关指示时，才添加复印、印花税票或证件费用缴纳步骤。不确定时可先不选，需要时向工作人员求助。",
+      "id": "Tambahkan fotokopi, meterai, atau pembayaran kartu hanya jika Anda diberi tahu bahwa itu diperlukan. Jika ragu, jangan pilih dulu dan minta bantuan petugas.",
+      "hi": "प्रतिलिपि, शुल्क टिकट या कार्ड शुल्क का चरण तभी जोड़ें जब आपको बताया गया हो कि इसकी ज़रूरत है। संदेह होने पर इसे न चुनें और ज़रूरत पड़ने पर कर्मचारी से मदद माँगें।",
+      "vi": "Chỉ thêm bước sao chụp, mua tem lệ phí hoặc nộp phí thẻ khi bạn được hướng dẫn làm việc đó. Nếu chưa rõ, cứ để trống và hỏi nhân viên khi cần."
     },
     "copyOption": {
       "ko": "여권 복사가 필요하다고 안내받았어요",

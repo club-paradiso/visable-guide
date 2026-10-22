@@ -22,11 +22,11 @@ test('real route handlers: anonymous rejection → login → save → public rea
   const login=await session.POST(req('/api/admin/session','POST',{password:'test-only-api-password-1234'}));assert.equal(login.status,200);
   const setCookie=login.headers.get('set-cookie')!;assert.match(setCookie,/HttpOnly/i);assert.match(setCookie,/SameSite=strict/i);const cookie=setCookie.split(';')[0];
   assert.equal((await(await session.GET(req('/api/admin/session','GET',undefined,cookie))).json()).authenticated,true);
-  const input={content:structuredClone(seed),expectedRevision:1,reason:'API 통합 경로 검증'};input.content.notices[0].text.ko='현장 검수용 테스트 공지';
-  const saved=await admin.PUT(req('/api/admin/content','PUT',input,cookie));assert.equal(saved.status,200);const d=await saved.json();assert.equal(d.content.revision,2);assert.equal(d.audit.length,1);
+  const input={content:structuredClone(seed),expectedRevision:seed.revision,reason:'API 통합 경로 검증'};input.content.notices[0].text.ko='현장 검수용 테스트 공지';
+  const saved=await admin.PUT(req('/api/admin/content','PUT',input,cookie));assert.equal(saved.status,200);const d=await saved.json();assert.equal(d.content.revision,seed.revision+1);assert.equal(d.audit.length,1);
   const publicView=await(await visitor.GET()).json();assert.equal(publicView.content.notices[0].text.ko,'현장 검수용 테스트 공지');assert.equal(publicView.audit,undefined);
   assert.equal((await admin.PUT(req('/api/admin/content','PUT',input,cookie))).status,409);
-  const csrf=new Request(base+'/api/admin/content',{method:'PUT',headers:{host:'localhost:4173',origin:'https://evil.example',cookie},body:JSON.stringify({...input,expectedRevision:2})});assert.equal((await admin.PUT(csrf)).status,403);
+  const csrf=new Request(base+'/api/admin/content',{method:'PUT',headers:{host:'localhost:4173',origin:'https://evil.example',cookie},body:JSON.stringify({...input,expectedRevision:seed.revision+1})});assert.equal((await admin.PUT(csrf)).status,403);
   const tampered={...input,content:{...input.content,ui:{}}};assert.equal((await admin.PUT(req('/api/admin/content','PUT',tampered,cookie))).status,400);
   const logout=await session.DELETE(req('/api/admin/session','DELETE',undefined,cookie));assert.match(logout.headers.get('set-cookie')!,/Max-Age=0/i);
   assert.equal((await session.GET(req('/api/admin/session'))).status,200);

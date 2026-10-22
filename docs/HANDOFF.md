@@ -4,7 +4,7 @@
 
 Preview URL: https://visable-guide-3lqk1e9e3-club-paradiso.vercel.app/
 
-Vercel project: visable-guide / Club Paradiso. Target: Preview. Runtime source commit: cc788760409546e66d15c46593be607972f02b48. QR/docs-only follow-up commits may be newer.
+Vercel project: visable-guide / Club Paradiso. Target: Preview. Runtime source: preview/mvp branch. Confirm the latest deployment commit in Vercel before field testing.
 
 별도 Next.js 앱 구현 및 Vercel Preview 배포. 기존 VISABLE은 package.json 읽기만 수행했으며 수정·배포하지 않았습니다. 런타임 AI 호출 없음. 비공식 시범 표시와 검색엔진 noindex 유지.
 
