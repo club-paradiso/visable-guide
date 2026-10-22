@@ -22,7 +22,7 @@ Node.js 24, npm. `npm ci`, `npm run dev` 후 http://localhost:4173. `npm run bui
 
 ## 관리자 설정
 
-`/admin`은 암호와 영구 저장소가 없으면 인증/게시를 거부합니다. 방문객에게 임시 관리자 암호를 공개하지 마세요.
+`/admin`은 관리자 암호가 없으면 인증을 거부합니다. 게시 토큰이 없으면 온라인 저장을 차단하고 초안 JSON 다운로드만 허용합니다. 설정 준비 상태는 로그인 화면에서 확인할 수 있습니다. 방문객에게 임시 관리자 암호를 공개하지 마세요.
 
 1. 자신의 신뢰할 수 있는 로컬 터미널에서 `node --import tsx scripts/admin-key.ts` 실행. 20자 이상의 강한 암호 입력. 터미널 입력은 화면에 보일 수 있으니 화면 공유를 끄세요.
 2. 출력된 `ADMIN_PASSWORD_HASH`, `ADMIN_SESSION_SECRET`를 **Vercel 프로젝트 Settings → Environment Variables → Preview**에만 입력. 암호·토큰을 채팅·GitHub·명령행 인수에 붙여 넣지 마세요.
@@ -36,8 +36,8 @@ Vercel 함수의 파일시스템을 영구 저장소로 사용하지 않습니�
 - 신규 `club-paradiso/visable-guide`에 `content` 브랜치를 생성 (main에서 분기). 배포할 코드는 `preview/mvp` 브랜치, 운영 콘텐츠는 `content` 브랜치로 분리.
 - GitHub fine-grained token: **visable-guide 저장소 하나만**, Contents Read and write. 기존 VISABLE 권한 불필요. 관리자 앱에서 토큰을 발급하지 않습니다.
 - Vercel Preview 환경변수: `CONTENT_GITHUB_TOKEN`, `CONTENT_GITHUB_REPO=club-paradiso/visable-guide`, `CONTENT_GITHUB_BRANCH=content`, `CONTENT_GITHUB_PATH=data/published.json`.
-- 새 콘텐츠 파일이 없으면 검수 대기 기본 데이터를 표시하고 첫 저장 때 파일 생성. 브랜치가 없거나 권한이 틀리면 저장 실패를 표시. 저장 성공 없이 게시 성공이라고 표시하지 않음.
-- API 응답에서 토큰·환경변수 값을 반환하지 않음. 방문객 `/api/content`에는 변경 이력·수정자 정보 제외.
+- 공개 저장소의 콘텐츠는 쓰기 토큰 없이도 읽을 수 있습니다. 읽기 실패 시 검수 대기 기본 데이터를 표시합니다. 게시 토큰 설정 후 콘텐츠 파일이 없으면 첫 저장 때 생성합니다. 브랜치가 없거나 권한이 틀리면 저장 실패를 표시. 저장 성공 없이 게시 성공이라고 표시하지 않음.
+- API 응답에서 토큰·환경변수 값을 반환하지 않음. 공개 콘텐츠와 변경 이력은 public 저장소에 남으므로 민원인 정보·비밀값·내부 전용 자료를 넣지 마세요. 방문객 `/api/content`에는 변경 이력·수정자 정보 제외.
 - 사진과 평면도는 브라우저에서 재인코딩/축소 후 JSON에 포함. 파일당 약 600KB, 전체 문서 약 2.4MB 제한. 대용량 자료실 용도가 아님.
 - GitHub SHA를 이용해 갱신 충돌 시 409 반환. 이전 콘텐츠와 이미지 복원은 해당 `content` 브랜치 Git 커밋을 검토해 복원. 수정 이력의 해시 연결은 사고 조사 보조이며 독립된 불변 감사 저장소는 아님.
 
@@ -51,7 +51,7 @@ Vercel 함수의 파일시스템을 영구 저장소로 사용하지 않습니�
 4. 민원 유형에서 단계 순서를 변경하고, 절차 탭에서 조건·준비물·주의사항·수수료 문구를 편집.
 5. 유형/시설/단계 추가·삭제와 고유 ID 변경은 전체 JSON 편집에서 수행. 서버가 참조·중복·6개 언어 누락을 검증. 시설 ID를 바꾸면 기존 인쇄 QR도 바뀌므로 고정 유지 권장.
 6. 모든 저장은 5자 이상 변경 사유가 필요. rN 충돌이면 다시 불러온 최신 내용과 비교 후 재수정.
-7. 관리자 QR 탭에서 실제 URL의 SVG 다운로드. 대량 파일은 `node --import tsx scripts/generate-qr.ts https://실제-배포주소`.
+7. 관리자 QR 탭에서 실제 URL의 SVG 다운로드. 대량 파일은 `node --import tsx scripts/generate-qr.ts https://실제-배포주소`. 현재 QR은 고정 테스트 주소 `https://visable-guide-git-preview-mvp-club-paradiso.vercel.app`을 사용합니다.
 
 ## 검수 정책
 
@@ -73,8 +73,12 @@ Vercel 함수의 파일시스템을 영구 저장소로 사용하지 않습니�
 
 ## 테스트
 
-`npm run typecheck`, `npm test`, `npm run build`. 모바일 E2E는 `npm run test:e2e`. Playwright iPhone(WebKit)와 Pixel(Chromium) 프로젝트를 사용하며 실제 디바이스 결과와 동일하다고 보장하지 않습니다.
+`npm run typecheck`, `npm test`, `npm run build`. API 통합 테스트는 인증 → 수정 → 방문객 조회 → 충돌/CSRF 차단까지 실제 route handler로 검증합니다. `.github/workflows/qa.yml`이 preview/mvp push 시 검사·빌드·32개 모바일 E2E를 실행합니다. 모바일 E2E는 `npm run test:e2e`. Playwright iPhone(WebKit)와 Pixel(Chromium) 프로젝트를 사용하며 실제 디바이스 결과와 동일하다고 보장하지 않습니다.
 
 ## 배포
 
 Vercel의 `visable-guide` 신규 프로젝트에서 Next.js 자동 감지, build `npm run build`, install `npm ci`. `preview/mvp` 브랜치를 Preview로 배포. 기존 VISABLE 프로젝트에 연결하거나 Production 승격하지 마세요. 기본 Preview 배포는 관리자 환경변수 없이 방문객 데모만 제공하고 관리자 게시 기능은 잠겨 있습니다.
+
+## 초기 운영 준비 상태
+
+Preview/mvp에는 관리자 암호 해시·세션키와 비밀값이 아닌 저장소·고정 QR 설정을 배포 환경변수로 구성했습니다. 관리자 접속 암호는 별도 비공개 전달 파일에 있으며 저장소에는 포함하지 않습니다. CONTENT_GITHUB_TOKEN은 아직 소유자 설정이 필요합니다. GitHub fine-grained token을 visable-guide 하나에만 제한하고 Contents Read and write만 선택한 후 Vercel Preview의 preview/mvp 분기 전용 Secret으로 설정하세요. 토큰을 채팅이나 이 저장소에 넣지 마세요. 설정 후 다시 배포해야 적용됩니다. `content` 브랜치는 vercel.json으로 자동 배포를 비활성화하여 콘텐츠 수정마다 불필요한 앱 빌드를 하지 않습니다.

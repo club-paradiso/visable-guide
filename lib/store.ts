@@ -3,30 +3,40 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import seedData from '../data/seed.json';
 import {contentSchema,type Content} from './schema';
+import {documentSchema} from './validation';
 export const seed=seedData as Content;
 export type Audit={id:string;at:string;actor:string;reason:string;revision:number;hash:string;previousHash:string;changed:string[]};
 type Document={content:Content;audit:Audit[]};
 const localDir=()=>path.resolve(process.env.CONTENT_LOCAL_DIR||'runtime');
 const githubReady=()=>!!process.env.CONTENT_GITHUB_TOKEN&&!!process.env.CONTENT_GITHUB_REPO;
+const remoteSource=()=>!!process.env.CONTENT_GITHUB_REPO;
 export function writable(){return githubReady()||(!process.env.VERCEL&&process.env.NODE_ENV!=='production')||(!process.env.VERCEL&&!!process.env.CONTENT_LOCAL_DIR);}
 function githubUrl(){const repo=process.env.CONTENT_GITHUB_REPO!;if(!/^[\w.-]+\/[\w.-]+$/.test(repo))throw new Error('Invalid repository');const p=process.env.CONTENT_GITHUB_PATH||'data/published.json';if(!/^[a-zA-Z0-9_./-]+$/.test(p)||p.includes('..'))throw new Error('Invalid content path');return `https://api.github.com/repos/${repo}/contents/${p}`;}
 async function ghRead():Promise<{document:Document;sha?:string}>{
  const branch=process.env.CONTENT_GITHUB_BRANCH||'content';
- const res=await fetch(githubUrl()+`?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${process.env.CONTENT_GITHUB_TOKEN}`,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},cache:'no-store',signal:AbortSignal.timeout(12000)});
+ const res=await fetch(githubUrl()+`?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${process.env.CONTENT_GITHUB_TOKEN}`,Accept:'application/vnd.github.object+json','X-GitHub-Api-Version':'2022-11-28'},cache:'no-store',signal:AbortSignal.timeout(12000)});
  if(res.status===404)return {document:{content:seed,audit:[]}};
  if(!res.ok)throw new Error('Content storage unavailable');
  const data=await res.json();let encoded=data.content;
  // GitHub Contents omits base64 content above 1 MB; use the Git blob endpoint.
  if(data.encoding==='none'||!encoded){if(!/^[a-f0-9]{40,64}$/.test(data.sha||''))throw new Error('Invalid storage revision');const blob=await fetch(`https://api.github.com/repos/${process.env.CONTENT_GITHUB_REPO}/git/blobs/${data.sha}`,{headers:{Authorization:`Bearer ${process.env.CONTENT_GITHUB_TOKEN}`,Accept:'application/vnd.github+json'},cache:'no-store',signal:AbortSignal.timeout(12000)});if(!blob.ok)throw new Error('Content blob unavailable');encoded=(await blob.json()).content;}
- const doc=JSON.parse(Buffer.from(encoded,'base64').toString());contentSchema.parse(doc.content);return {document:doc,sha:data.sha};
+ const doc=documentSchema.parse(JSON.parse(Buffer.from(encoded,'base64').toString()));return {document:doc,sha:data.sha};
 }
-async function localRead():Promise<Document>{try{const d=JSON.parse(await readFile(path.join(localDir(),'published.json'),'utf8'));contentSchema.parse(d.content);return d;}catch(e){if((e as NodeJS.ErrnoException).code==='ENOENT')return {content:seed,audit:[]};throw e;}}
-export async function readDocument():Promise<Document>{return githubReady()?(await ghRead()).document:localRead();}
+async function localRead():Promise<Document>{try{const d=JSON.parse(await readFile(path.join(localDir(),'published.json'),'utf8'));return documentSchema.parse(d);}catch(e){if((e as NodeJS.ErrnoException).code==='ENOENT')return {content:seed,audit:[]};throw e;}}
+async function publicRead():Promise<Document>{
+ const repo=process.env.CONTENT_GITHUB_REPO!;githubUrl();
+ const branch=process.env.CONTENT_GITHUB_BRANCH||'content';
+ const file=process.env.CONTENT_GITHUB_PATH||'data/published.json';
+ const res=await fetch(`https://raw.githubusercontent.com/${repo}/${encodeURIComponent(branch)}/${file}`,{cache:'no-store',signal:AbortSignal.timeout(7000)});
+ if(!res.ok)throw new Error('Public content unavailable');
+ return documentSchema.parse(await res.json());
+}
+export async function readDocument():Promise<Document>{return githubReady()?(await ghRead()).document:remoteSource()?publicRead():localRead();}
 let localQueue=Promise.resolve();
 async function withLock<T>(fn:()=>Promise<T>):Promise<T>{
  let release!:()=>void;const previous=localQueue;localQueue=new Promise<void>(r=>{release=r});await previous;
- await mkdir(localDir(),{recursive:true});const lock=path.join(localDir(),'.lock');let handle;
- try{handle=await open(lock,'wx');return await fn();}finally{if(handle){await handle.close();await unlink(lock);}release();}
+ const lock=path.join(localDir(),'.lock');let handle;
+ try{await mkdir(localDir(),{recursive:true});handle=await open(lock,'wx');return await fn();}finally{try{if(handle){await handle.close();await unlink(lock);}}finally{release();}}
 }
 export class Conflict extends Error{}
 export async function saveContent(next:Content,expected:number,actor:string,reason:string){
